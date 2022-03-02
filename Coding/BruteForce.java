@@ -1,0 +1,80 @@
+public class BruteForce {
+	public static void main(String []args) {
+		//this is my in draft code. saving for my own reference in the future
+		System.out.println();
+		System.out.println("**Mini-Assignment will calculate the following equation for you: ABCDE x A = EEEEEE**");
+		System.out.println();
+		
+		//String E = "1";
+		//String Ee = E + E + E + E + E + E;
+		//int ee = Integer.parseInt(Ee);
+		
+		
+		//initial variables of A and E
+		int Ee = 111111;
+		int e = Ee % 10;//singling out 1 variable to cross check with future answer (E = EEEEEE)
+		int a = 1; 
+		
+		//for loop to check all potential answers (EEEEEE)
+		for (Ee = 111111; Ee <= 999999; Ee = Ee += 111111) {
+			int ee = Ee %10;
+			System.out.println("When E (EEEEEE) equals " + ee);
+			
+			//for loop to check all A values
+			for (a = 1; a <= 9; a++) {
+				int ans = Ee / a ;
+				
+					//while loop to separate digits of all answers
+					while (ans > 0) {
+						
+						int A = ans / 10000 % 10;
+						int B = ans / 1000 % 10;
+						int C = ans / 100 % 10;
+						int D = ans / 10 % 10;
+						int E = ans % 10;
+					
+						//System.out.println("here are the last separated digits of ans: " + A +" "+ B +" "+ C + D + E);
+						//System.out.println();
+					
+							//if statement to validate uniqueness of digits
+							if (A != B && A != C && A != D && A != E && B != C && B != D && B != E && C != D && C != E && D != E) {
+								//System.out.println(" A equals " + a);
+								//System.out.println(" = " + ans);
+								//System.out.print("The diviser has unique digits");
+								//System.out.println();
+							
+								//if statement to check the E in answer equals E in ABCDE
+								if (E == ee) {
+									System.out.println(" A equals " + a);
+									System.out.println(" = " + ans);
+									System.out.print("The diviser has unique digits");
+									System.out.println(" and it is TRUE!! :)");
+									String answer = " " + ans + " x " + a + " = " + Ee + "";
+									System.out.println("The answer to the above equation is:" + answer);
+									System.out.println();
+									
+								} else {
+									System.out.println("No unique result with correct variables");
+									System.out.println();
+									
+									//System.out.println(" but false");
+									//System.out.println();
+								}
+							
+							} else {
+								//System.out.println("No unique result with correct variables");
+							
+							}
+						
+						break;//stops the while loop
+					}
+				//System.out.println(ans);
+				//System.out.println();
+				
+			}
+			
+		}
+		
+		//System.out.println("The answer to the above equation is: 79365 x 7 = 555555");
+	}
+}
