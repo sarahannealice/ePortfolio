@@ -12,11 +12,11 @@ date: december 14, 2022
     justify-self: right;
     font-family: 'drip October';
     color: var(--independence);
-    font-size: 20px;
+    font-size: 16vw;
 }
 
 .title bug_txt {
-    font-size: 4vw;
+    font-size: 8vw;
 }
 
 p.line1 {
