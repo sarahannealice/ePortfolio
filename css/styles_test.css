@@ -49,7 +49,7 @@ body {
     flex-direction: column;
     word-break: normal;
     color: var(--independence);
-    background-image: url("../images/background_night.jpg");
+    background-image: url("../images/background_day.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
