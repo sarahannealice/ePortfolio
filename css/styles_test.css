@@ -7,14 +7,14 @@ date: december 14, 2022
 
 /*COLOUR VARIABLES*/
 :root {
-    --fadedbabyblueeyes: #abd2fa60;
-    --fadedcornflowerblue: #7692ff60;
-    --babyblueeyes: #abd2fa;
-    --cornflowerblue: #7692ff;
-    --independence: #574d68;
-    --candypink: #e0777d;
-    --pastelpink: #dfaeb4;
-    --lightpink: #eec6cb;
+    --fadedbabyblueeyes: 171,210,250,60;/*#abd2fa60*/
+    --fadedcornflowerblue: 118,146,255,60;/*#7692ff60*/
+    --babyblueeyes: 171,210,250;/*#abd2fa*/
+    --cornflowerblue: 118,146,255;/*#7692ff*/
+    --independence: 87,77,104;/*#574d68*/
+    --candypink: 224,119,125;/*#e0777d*/
+    --pastelpink: 223,174,180;/*#dfaeb4*/
+    --lightpink: 238,198,203;/*#eec6cb*/
 }
 
 
@@ -38,14 +38,13 @@ body {
     flex-direction: column;
     word-break: normal;
     background: rgb(238,198,203);
-    background: linear-gradient(to bottom, rgba(238,198,203,0) 0%, rgba(238,198,203,1) 90%), url("../images/background_day.jpg");
+    background: linear-gradient(to bottom, rgba(var(--lightpink),0) 10%, rgba(var(--lightpink),1) 90%), url("../images/background_day.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
-/*
 #wrapper {
     margin-top: auto;
     overflow-y: auto;
@@ -192,4 +191,3 @@ header .bolder {
     letter-spacing: 0.1em;
     text-shadow: 0px 3px 10px rgba(0,0,0,0.5);
 }
-*/
