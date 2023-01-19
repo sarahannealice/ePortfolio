@@ -19,7 +19,7 @@ date: december 14, 2022
     font-size: 7vw;
 }
 
-p.line1 {
+p.welcome_txt {
     grid-column: 2;
     grid-row: 1;
     justify-self: center;
@@ -55,7 +55,7 @@ img.cartoon {
     justify-self: center;
 }
 
-.talk_btn span {
+.talk_btn talk_txt {
     padding: 10px;
     background-color: var(--cornflowerblue);
     border-color: var(--independence);
@@ -63,7 +63,7 @@ img.cartoon {
     border-radius: 50px;
 }
 
-.talk_btn span:hover {
+.talk_btn talk_txt:hover {
     box-shadow: 5px 5px 10px 2px var(--independence);
     text-decoration: none;
 }
