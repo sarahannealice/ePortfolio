@@ -49,6 +49,85 @@ body {
     align-items: center;
 }
 
+
+p {
+    font-weight: 300;
+    line-height: 1rem;
+}
+
+.inner-container-content p {
+    line-height: 100%;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    line-height: 90%;
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.7);
+}
+
+h2 {
+    font-weight: 400;
+    text-transform: lowercase;   
+    letter-spacing: 0.2em;
+    margin: 1%;
+    width: 50%;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.2em;
+    margin: 3%;
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.7);
+    color: rgb(var(--light-orange));
+}
+
+.outer-container {
+    border: 1px solid rgb(var(--darker-blue));
+    border-radius: 0.5rem;
+    padding: 0rem 0.3rem 0.3rem 0.3rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1%;
+}
+
+.box {
+    margin: 0vw 0vw 0vw 0.3vw;
+}
+
+.box1 {
+    background-color: rgb(var(--muted-purple));
+    border: 1px solid rgb(var(--dark-purple));
+    border-radius: 15%;
+}
+
+.box2 {
+    background-color: rgb(var(--light-orange));
+    border: 1px solid rgb(var(--dark-orange));
+    border-radius: 15%;
+}
+
+.box3 {
+    background-color: rgb(var(--muted-pink));
+    border: 1px solid rgb(var(--dark-pink));
+    border-radius: 15%;
+}
+
+
+
 .logo {
     justify-self: end;
     padding: 20px;
