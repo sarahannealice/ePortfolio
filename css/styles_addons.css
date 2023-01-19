@@ -16,14 +16,14 @@ date: december 14, 2022
 }
 
 .title bug_txt {
-    font-size: 7vw;
+    font-size: 4vw;
 }
 
 p.welcome_txt {
     grid-column: 2;
     grid-row: 1;
     justify-self: center;
-    font-size: 0.4vw;
+    font-size: 2vw;
 }
 
 .contact {
