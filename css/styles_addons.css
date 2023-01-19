@@ -147,7 +147,8 @@ img.cartoon {
 
 
 /*ABOUT PAGE*/
-.body {
+#body {
+    font-family: 'courierPrime', Courier Prime Sans, sans-serif;
     grid-column: 2;
     grid-row: inherit;
 }
