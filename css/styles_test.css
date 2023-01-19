@@ -58,7 +58,7 @@ body {
     grid-template-rows: 3fr 1fr;
     height: 33%;
 
-    background: var(--fadedcornflowerblue);
+    /*background: var(--fadedcornflowerblue);*/
     font-family: 'dripOctober', Drip October, sans-serif;
 }
 
@@ -132,7 +132,7 @@ nav {
     grid-template-columns: 1.5fr 3.5fr 1fr 2fr 1.5fr;
     grid-template-rows: 3fr 3fr 1fr;
     height: 66%;
-    background-color: var(--fadedbabyblueeyes);
+    /*background-color: var(--fadedbabyblueeyes);*/
     font-family: 'courierPrime', Courier Prime Sans, sans-serif;
 }
 
