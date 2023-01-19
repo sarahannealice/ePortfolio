@@ -171,4 +171,28 @@ footer {
     display: inline;
 }
 
+
+
 /*--mobile: 0px to 374px--*/
+@media only screen and (max-width: 374px) {
+    .box {
+        height: 2.5vw;
+        width: 2.5vw;
+    }
+
+    /*different sections to follow*/
+}
+
+
+
+/*--tablet: 375px to 768px--*/
+/* @media only screen and (min-width: 375px) and (max-width: 768px) {
+    coming soon
+} */
+
+
+
+/*--desktop: greater than 769px--*/
+/* @media only screen and (min-width: 769px) {
+    coming soon
+} */
