@@ -31,19 +31,25 @@ date: december 14, 2022
 
 
 /*BASE LAYOUT*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'courierPrime', sans-serif;
+}
+
 html, body {
     height: 100%;
-    overflow: hidden;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     word-break: normal;
     color: white;
-    background-image: /*linear-gradient(to bottom, rgba(var(--fadedcornflowerblue), 0) 10%, rgba(var(--fadedcornflowerblue), 1) 90%),*/ url("../images/background_day.jpg");
+    background-image: linear-gradient(to bottom, rgba(var(--darker-blue), 0) 10%, rgba(var(--darker-blue), 1) 90%), url("../images/background_day.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
