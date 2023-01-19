@@ -72,12 +72,6 @@ ul {
     list-style-type: none;
 }
 
-/*
-nav {
-    display: grid;
-    grid-column: 3;
-}
-
 .topnav {
     float: right;
     overflow: hidden;
@@ -101,9 +95,6 @@ nav {
 }
 
 .darklight {
-    display: grid;
-    grid-column: 4;
-    grid-row: 1;
     position: relative;
     display: inline-block;
     padding: 25px;
@@ -121,7 +112,6 @@ nav {
 .darklight:hover .darklight_hover {
     display: inline;
 }
-*/
 
 
 
