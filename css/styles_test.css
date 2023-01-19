@@ -18,6 +18,7 @@ date: december 14, 2022
 }
 
 
+
 /*FONTS*/
 @font-face {
     font-family: 'dripOctober';
@@ -27,21 +28,30 @@ date: december 14, 2022
     src: url('/fonts/CourierPrimeSans-Ynxj.ttf') format('woff2');
 }
 
+
+
 /*BASE LAYOUT*/
 html, body {
-    margin: 0;
-    padding: 0;
     height: 100%;
+    overflow: hidden;
+}
 
-    background-image: url('../images/alexander-grey-62vi3TG5EDg-unsplash.jpg');
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-break: normal;
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(var(--fadedcornflowerblue), 0) 10%, rgba(var(--fadedcornflowerblue), 1) 90%), url("../images/background_dark.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-}
 
 
+/*TOP SPECIFICS*/
 #top-container {
     display: grid;
     grid-template-columns: 1fr 3fr 4fr .5fr;
@@ -49,12 +59,30 @@ html, body {
     height: 33%;
 
     background: var(--fadedcornflowerblue);
+    font-family: 'dripOctober', Drip October, sans-serif;
+}
+
+.logo {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
+    padding: 20px;
+}
+
+
+/*TOP NAV MENU*/
+ul {
+    list-style-type: none;
 }
 
 nav {
+    display: grid;
+    grid-column: 3;
 }
 
 .topnav {
+    float: right;
+    overflow: hidden;
     padding: 20px;
 }
 
@@ -62,21 +90,113 @@ nav {
     display: inline;
 }
 
-.topnav a{
+.topnav a {
     color: var(--independence);
+    text-align: center;
+    padding: 10px;
     text-decoration: none;
     font-size: 20px;
 }
 
+.topnav a:hover {
+    color: var(--babyblueeyes);
+}
 
+.darklight {
+    display: grid;
+    grid-column: 4;
+    grid-row: 1;
+    position: relative;
+    display: inline-block;
+    padding: 25px;
+}
+
+.darklight .darklight_hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 25px;
+}
+
+.darklight:hover .darklight_hover {
+    display: inline;
+}
+
+
+
+/*BOTTOM SPECIFICS*/
 #bottom-container {
     display: grid;
     grid-template-columns: 1.5fr 3.5fr 1fr 2fr 1.5fr;
     grid-template-rows: 3fr 3fr 1fr;
     height: 66%;
     background-color: var(--fadedbabyblueeyes);
+    font-family: 'courierPrime', Courier Prime Sans, sans-serif;
 }
 
-.darklight {
-    grid-column: 4;
+
+/*BOTTOM NAV MENU*/
+.footnav {
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+
+.github {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}
+
+.github .github_hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.github:hover .github_hover {
+    display: inline;
+}
+
+.linkedin {
+    position: absolute;
+    bottom: 20px;
+    left: 85px;
+}
+
+.linkedin .linkedin_hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.linkedin:hover .linkedin_hover {
+    display: inline;
+}
+
+.email {
+    position: absolute;
+    bottom: 20px;
+    left: 130px;
+}
+
+.email .email_hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.email:hover .email_hover {
+    display: inline;
 }
