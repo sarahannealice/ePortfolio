@@ -125,18 +125,22 @@ nav {
 */
 
 
-/*BOTTOM SPECIFICS*/
-#bottom-container {
-    display: grid;
-    grid-template-columns: 1.5fr 3.5fr 1fr 2fr 1.5fr;
-    grid-template-rows: 3fr 3fr 1fr;
-    height: 66%;
-    /*background-color: var(--fadedbabyblueeyes);*/
-    font-family: 'courierPrime', Courier Prime Sans, sans-serif;
+
+/*FOOTER NAV MENU*/
+footer {
+    margin-top: auto;
+    align-items: center;
+    background-color: rgb(var(--lightpink));
+    border-top: 2px solid rgb(var(--independence));
+    /*
+    font-weight: 300;
+    font-size: calc(8px + 0.2vw);
+    letter-spacing: 0.2em;
+    line-height: 2;
+    text-transform: lowercase;
+    */
 }
 
-
-/*BOTTOM NAV MENU*/
 .footnav {
     display: grid;
     grid-column: 1;
