@@ -34,15 +34,24 @@ html, body {
 body {
     margin: auto;
     display: flex;
+    background-image: linear-gradient(red, yellow);
+}
+
+/*
+body {
+    margin: auto;
+    display: flex;
     flex-direction: column;
     word-break: normal;
     color: var(--independence);
-    background-image: /*linear-gradient(to bottom, rgba(var(--lightpink), 0) 10%, rgba(var(--lightpink), 1) 90%),*/ url("../images/background_day.jpg");
+    background-image: linear-gradient(to bottom, rgba(var(--lightpink), 0) 10%, rgba(var(--lightpink), 1) 90%), url("../images/background_day.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+*/
 
+/*
 #wrapper {
     margin-top: auto;
     overflow-y: auto;
@@ -94,36 +103,6 @@ h3 {
 .row {
     display: flex;
     justify-content: space-between;
-}
-
-.boxes {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: end;
-    padding-right: 1%;
-}
-
-.boxes {
-    margin: 0vw 0vw 0vw 0.3vw;
-}
-
-.box1 {
-    background-color: rgb(var(--muted-purple));
-    border: 1px solid rgb(var(--dark-purple));
-    border-radius: 15%;
-}
-
-.box2 {
-    background-color: rgb(var(--light-orange));
-    border: 1px solid rgb(var(--dark-orange));
-    border-radius: 15%;
-}
-
-.box3 {
-    background-color: rgb(var(--muted-pink));
-    border: 1px solid rgb(var(--dark-pink));
-    border-radius: 15%;
 }
 
 header {
@@ -219,3 +198,4 @@ header .bolder {
     letter-spacing: 0.1em;
     text-shadow: 0px 3px 10px rgba(0,0,0,0.5);
 }
+*/
