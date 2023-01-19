@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*
+author: sarah newman
+date: december 14, 2022
+*/
+
+/*COLOUR VARIABLES*/
+:root {
+    --fadedbabyblueeyes: #abd2fa60;
+    --fadedcornflowerblue: #7692ff60;
+    --babyblueeyes: #abd2fa;
+    --cornflowerblue: #7692ff;
+    --independence: #574d68;
+    --candypink: #e0777d;
+    --pastelpink: #dfaeb4;
+    --lightpink: #eec6cb;
+}
+
+
+/*FONTS*/
+@font-face {
+    font-family: 'dripOctober';
+    src: url('/fonts/DripOctober-vm0JA.ttf') format('woff2');
+
+    font-family: 'courierPrime';
+    src: url('/fonts/CourierPrimeSans-Ynxj.ttf') format('woff2');
+}
+
+/*BASE LAYOUT*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    background-image: url('../images/alexander-grey-62vi3TG5EDg-unsplash.jpg');
+    background-size: cover;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+#top-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr .5fr;
+    grid-template-rows: 3fr 1fr;
+    height: 33%;
+
+    background: var(--fadedcornflowerblue);
+}
+
+nav {
+}
+
+.topnav {
+    padding: 20px;
+}
+
+.topnav li {
+    display: inline;
+}
+
+.topnav a{
+    color: var(--independence);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+#bottom-container {
+    display: grid;
+    grid-template-columns: 1.5fr 3.5fr 1fr 2fr 1.5fr;
+    grid-template-rows: 3fr 3fr 1fr;
+    height: 66%;
+    background-color: var(--fadedbabyblueeyes);
+}
+
+.darklight {
+    grid-column: 4;
+}
