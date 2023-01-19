@@ -18,7 +18,7 @@ date: december 14, 2022
 }
 
 
-/*BASE LAYOUT*/
+/*base layout*/
 * {
     margin: 0;
     padding: 0;
@@ -60,17 +60,17 @@ ul {
     list-style-type: none;
 }
 
-.topnav {
+#topnav {
     float: right;
     overflow: hidden;
     padding: 20px;
 }
 
-.topnav li {
+#topnav li {
     display: inline;
 }
 
-.topnav a {
+#topnav a {
     color: var(--independence);
     text-align: center;
     padding: 10px;
@@ -78,7 +78,7 @@ ul {
     font-size: 20px;
 }
 
-.topnav a:hover {
+#topnav a:hover {
     color: var(--babyblueeyes);
 }
 
