@@ -48,7 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     word-break: normal;
-    color: white;
+    color: var(--independence);
     background-image: url("../images/background_night.jpg");
     background-position: center;
     background-repeat: no-repeat;
