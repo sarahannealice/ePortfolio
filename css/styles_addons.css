@@ -150,5 +150,5 @@ img.cartoon {
 #body {
     font-family: 'courierPrime', Courier Prime Sans, sans-serif;
     grid-column: 2;
-    grid-row: inherit;
+    grid-row: 3;
 }
