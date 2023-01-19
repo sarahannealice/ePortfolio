@@ -154,7 +154,7 @@ img.cartoon {
     grid-row: 3;
 }
 
-#body.introduction {
+#body .introduction {
     font-size: 30px;
     font-weight: bold;
 }
