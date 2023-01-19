@@ -60,7 +60,7 @@ p {
 }
 
 h1 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 0.35em;
@@ -77,7 +77,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 200;
     letter-spacing: 0.2em;
     margin: 3%;
@@ -86,7 +86,7 @@ h3 {
 }
 
 .outer-container {
-    border: 1px solid rgb(var(--darker-blue));
+    border: 1px solid rgb(var(--independence));
     border-radius: 0.5rem;
     padding: 0rem 0.3rem 0.3rem 0.3rem;
 }
