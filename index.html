@@ -26,41 +26,63 @@
 
     
     <body>
-        <div id="top-container">
-            <img src="images/icons/logo.png" class="logo" alt="logo" width="80" height="51">
-            <nav>
-                <ul>
-                <div class="topnav">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="projects.html">projects</a></li>
-                    <li><a href="skills.html">skills</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </div>
-                </ul>
-            </nav>
 
-            <div class="darklight">
-                <img src="images/icons/lightdark_dark.png" alt="darklight_dark" width="51" height="37">
-                <img src="images/icons/lightdark_light.png" class="darklight_hover" alt="darklight_light" width="50" height="35">
-            </div>
+        <header>
+            <div id="topnav">
+                <img src="images/icons/logo.png" class="logo" alt="logo" width="80" height="51">
+                <nav>
+                    <ul>
+                    <div class="menu">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="projects.html">projects</a></li>
+                        <li><a href="skills.html">skills</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </div>
+                    </ul>
+                </nav>
 
-            <h1 class="title"><bug_txt>BUG CONTROL..</bug_txt> FOR YOUR CODE</h1>
-        </div>
-
-
-        <div id="bottom-container">
-            <p class="welcome_txt">Welcome! I'm sarah and it's great to meet you.<br>Please look around and make yourself at home.</p>
-            <p class="line2"></p>
-            
-            <div class="contact">
-                <img src="images/cartoon_w_ribbon.png" class="cartoon" alt="sarah_cartoon" width="350" height="538">
-                <div class="talk_btn">
-                    <p><talk_txt>let's talk</talk_txt></p>
+                <div class="darklight">
+                    <img src="images/icons/lightdark_dark.png" alt="darklight_dark" width="51" height="37">
+                    <img src="images/icons/lightdark_light.png" class="darklight_hover" alt="darklight_light" width="50" height="35">
                 </div>
             </div>
+
+
+            <div id="wrapper">
+                <div class="outer-container">
+                    <div class="row">
+                        <h2 class="outer-container-text">welcome</h2>
+                        <div class="boxes">
+                            <div class="box box1">&nbsp</div>
+                            <div class="box box2">&nbsp</div>
+                            <div class="box box3">&nbsp</div>
+                        </div>
+                    </div>
+                    <div class="inner-container-content">
+                        <div class="inner-container"></div> <!--This is for the css!-->
+                        <div class="column">
+                            <h1 class="title1"><bug_txt>BUG CONTROL..</bug_txt>FOR YOUR CODE</h1>
+                            <p class="title2">I'm sarah and it's great to meet you.<br>Please look around and make yourself at home.</p>
+                        </div>
+                    </div>
+
+                </div><!--close outer-container-->
+            </div><!--close wrapper-->
+        </header>
+                
+            <main>
+                <div class="contact">
+                    <img src="images/cartoon_w_ribbon.png" class="cartoon" alt="sarah_cartoon" width="350" height="538">
+                    <div class="talk_btn">
+                        <p><talk_txt>let's talk</talk_txt></p>
+                    </div>
+                </div>
+            </main>
             
 
+
+        <footer>
             <div class="footnav">
                 <div class="github">
                     <img src="images/icons/github_dark.png" width="51" height="37">
@@ -78,7 +100,8 @@
                     <a href="mailto:sarah.annealice@gmail.com"><img src="images/icons/email_light.png" class="email_hover" width="51" height="37"></a>
                 </div>
             </div>
-        </div>
+        </footer>
+        
     </body>
 
 </html>
