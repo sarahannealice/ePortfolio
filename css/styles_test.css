@@ -18,19 +18,7 @@ date: december 14, 2022
 }
 
 
-
-/*FONTS*/
-/*@font-face {
-    font-family: 'dripOctober';
-    src: url('/fonts/DripOctober-vm0JA.ttf') format('woff2');
-
-    font-family: 'courierPrime';
-    src: url('/fonts/CourierPrimeSans-Ynxj.ttf') format('woff2');
-}*/
-
-
-
-/*BASE LAYOUT*/
+/*base layout*/
 * {
     margin: 0;
     padding: 0;
@@ -61,134 +49,79 @@ body {
     align-items: center;
 }
 
-.logo {
-    justify-self: end;
-    padding: 20px;
-}
 
-
-/*TOP NAV MENU*/
-ul {
-    list-style-type: none;
-}
-
-.topnav {
-    float: right;
-    overflow: hidden;
-    padding: 20px;
-}
-
-.topnav li {
-    display: inline;
-}
-
-.topnav a {
-    color: var(--independence);
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.topnav a:hover {
-    color: var(--babyblueeyes);
-}
-
-.darklight {
-    position: relative;
-    display: inline-block;
-    padding: 25px;
-}
-
-.darklight .darklight_hover {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    padding: 25px;
-}
-
-.darklight:hover .darklight_hover {
-    display: inline;
-}
-
-
-
-/*FOOTER NAV MENU*/
-footer {
-    margin-top: auto;
-    align-items: center;
-    background-color: rgb(var(--lightpink));
-    border-top: 2px solid rgb(var(--independence));
-    /*
+p {
     font-weight: 300;
-    font-size: calc(8px + 0.2vw);
+    line-height: 1rem;
+}
+
+.inner-container-content p {
+    line-height: 100%;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    line-height: 90%;
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.7);
+}
+
+h2 {
+    font-weight: 400;
+    text-transform: lowercase;   
     letter-spacing: 0.2em;
-    line-height: 2;
-    text-transform: lowercase;
-    */
+    margin: 1%;
+    width: 50%;
 }
 
-.footnav {
-    display: grid;
-    grid-column: 1;
-    grid-row: 4;
-    position: relative;
-    display: inline-block;
-    padding: 20px;
+h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.2em;
+    margin: 3%;
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.7);
+    color: rgb(var(--light-orange));
 }
 
-.github {
-    position: absolute;
-    bottom: 20px;
-    left: 40px;
+.outer-container {
+    border: 1px solid rgb(var(--independence));
+    border-radius: 0.5rem;
+    padding: 0rem 0.3rem 0.3rem 0.3rem;
 }
 
-.github .github_hover {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
+.row {
+    display: flex;
+    justify-content: space-between;
 }
 
-.github:hover .github_hover {
-    display: inline;
+.boxes {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1%;
 }
 
-.linkedin {
-    position: absolute;
-    bottom: 20px;
-    left: 85px;
+.box {
+    margin: 0vw 0vw 0vw 0.3vw;
 }
 
-.linkedin .linkedin_hover {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
+.box1 {
+    background-color: rgb(var(--muted-purple));
+    border: 1px solid rgb(var(--dark-purple));
+    border-radius: 15%;
 }
 
-.linkedin:hover .linkedin_hover {
-    display: inline;
+.box2 {
+    background-color: rgb(var(--light-orange));
+    border: 1px solid rgb(var(--dark-orange));
+    border-radius: 15%;
 }
 
-.email {
-    position: absolute;
-    bottom: 20px;
-    left: 130px;
-}
-
-.email .email_hover {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-
-.email:hover .email_hover {
-    display: inline;
+.box3 {
+    background-color: rgb(var(--muted-pink));
+    border: 1px solid rgb(var(--dark-pink));
+    border-radius: 15%;
 }
