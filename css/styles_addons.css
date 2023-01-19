@@ -144,3 +144,10 @@ img.cartoon {
 .c_code:hover {
     opacity: 0.5;
 }
+
+
+/*ABOUT PAGE*/
+.body {
+    grid-column: 2;
+    grid-row: inherit;
+}
