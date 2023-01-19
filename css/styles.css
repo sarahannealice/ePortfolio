@@ -18,18 +18,6 @@ date: december 14, 2022
 }
 
 
-
-/*FONTS*/
-/*@font-face {
-    font-family: 'dripOctober';
-    src: url('/fonts/DripOctober-vm0JA.ttf') format('woff2');
-
-    font-family: 'courierPrime';
-    src: url('/fonts/CourierPrimeSans-Ynxj.ttf') format('woff2');
-}*/
-
-
-
 /*BASE LAYOUT*/
 * {
     margin: 0;
@@ -121,19 +109,9 @@ footer {
     align-items: center;
     background-color: rgb(var(--lightpink));
     border-top: 2px solid rgb(var(--independence));
-    /*
-    font-weight: 300;
-    font-size: calc(8px + 0.2vw);
-    letter-spacing: 0.2em;
-    line-height: 2;
-    text-transform: lowercase;
-    */
 }
 
 .footnav {
-    display: grid;
-    grid-column: 1;
-    grid-row: 4;
     position: relative;
     display: inline-block;
     padding: 20px;
@@ -192,3 +170,5 @@ footer {
 .email:hover .email_hover {
     display: inline;
 }
+
+/*--mobile: 0px to 374px--*/
