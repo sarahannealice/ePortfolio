@@ -60,9 +60,6 @@ ul {
 }
 
 #topnav {
-    grid-row: 1;
-    grid-column: 2/span 2;
-    border: dotted, var(--babyblueeyes);
     float: right;
     overflow: hidden;
     padding: 20px;
@@ -103,6 +100,15 @@ ul {
     display: inline;
 }
 
+.menu {
+    grid-row: 1;
+    grid-column: 2/span 2;
+}
+
+.logo {
+    grid-row: 1;
+    grid-column: 1;
+}
 
 
 p {
