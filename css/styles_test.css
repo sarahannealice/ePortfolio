@@ -113,7 +113,7 @@ p {
 
 h1 {
     font-weight: 400;
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     text-transform: uppercase;
     line-height: 90%;
     text-shadow: 0px 2px 10px rgba(var(--candypink),0.7);
@@ -127,8 +127,8 @@ h1 {
 h2 {
     font-family: 'Nunito', sans-serif;
     font-size: 0.6;
-    text-transform: lowercase;   
-    letter-spacing: 0.2em;
+    font-weight: 10;
+    text-transform: lowercase;
     margin: 1%;
     width: 50%;
 }
