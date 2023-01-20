@@ -67,7 +67,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.35em;
     line-height: 90%;
-    text-shadow: 0px 2px 10px var(--candypink,0.7);
+    text-shadow: 0px 2px 10px rgba(var(--candypink),0.7);
 }
 
 h2 {
