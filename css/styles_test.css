@@ -5,7 +5,7 @@ author: sarah newman
 date: december 14, 2022
 */
 
-/*COLOUR VARIABLES*/
+/*colour variables*/
 :root {
     --fadedbabyblueeyes: 171,210,250,60;/*#abd2fa60*/
     --fadedcornflowerblue: 118,146,255,60;/*#7692ff60*/
@@ -20,7 +20,7 @@ date: december 14, 2022
 
 /*base layout*/
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -35,6 +35,7 @@ body {
     margin: auto;
     display: grid;
     grid-template-rows: 1fr, 9fr;
+    grid-template-columns: 1fr, 3fr, 2fr;
     word-break: normal;
     background: rgb(var(--lightpink));
     background: linear-gradient(to bottom, rgba(var(--lightpink),0) 10%, rgba(var(--lightpink),1) 100%), url("../images/background_day.jpg");
@@ -53,7 +54,7 @@ body {
 }
 
 
-/*TOP NAV MENU*/
+/*top nav menu*/
 ul {
     list-style-type: none;
 }
@@ -236,4 +237,20 @@ header .bolder {
     font-weight:700;
     letter-spacing: 0.1em;
     text-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+}
+
+
+/*footer*/
+footer {
+    margin-top: auto;
+    align-items: flex-start;
+    background-color: rgb(var(--lightpink));
+    border-top: 2px solid rgb(var(--independence));
+    /*
+    font-weight: 300;
+    font-size:calc(8px + 0.2vw);
+    letter-spacing: 0.2em;
+    line-height: 2.0;
+    text-transform: lowercase;
+    */
 }
