@@ -61,6 +61,7 @@ p {
 
 h1 {
     font-family: 'Nunito', sans-serif;
+    font-weight: 20;
     text-transform: uppercase;
     letter-spacing: 0.35em;
     line-height: 90%;
