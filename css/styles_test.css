@@ -36,7 +36,6 @@ body {
     display: grid;
     grid-template-rows: 1fr, 9fr;
     grid-template-columns: 1fr, 3fr, 2fr;
-    border: dotted;
     word-break: normal;
     background: rgb(var(--lightpink));
     background: linear-gradient(to bottom, rgba(var(--lightpink),0) 10%, rgba(var(--lightpink),1) 100%), url("../images/background_day.jpg");
@@ -52,6 +51,8 @@ body {
     margin-top: auto;
     overflow-y: auto;
     align-items: center;
+
+    border: dotted, var(--babyblueeyes);
 }
 
 
@@ -62,6 +63,7 @@ ul {
 
 #topnav {
     grid-row: 1;
+    grid-column: 2/span 2;
     float: right;
     overflow: hidden;
     padding: 20px;
