@@ -112,8 +112,8 @@ p {
 }
 
 h1 {
-    font-weight: 75;
-    font-size: 0.6vw;
+    font-weight: 400;
+    font-size: 1.6vw;
     text-transform: uppercase;
     letter-spacing: 0.35em;
     line-height: 90%;
@@ -122,12 +122,12 @@ h1 {
 
 .column bug_txt {
     font-weight: 400;
-    font-size: 1.6vw;
+    font-size: 2.6vw;
 }
 
 h2 {
     font-family: 'Nunito', sans-serif;
-    font-weight: 200;
+    font-size: 0.6;
     text-transform: lowercase;   
     letter-spacing: 0.2em;
     margin: 1%;
