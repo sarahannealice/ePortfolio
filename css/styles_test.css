@@ -219,35 +219,6 @@ h2 {
     justify-content: space-between;
 }
 
-.boxes {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: end;
-    padding-right: 1%;
-}
-
-.box {
-    margin: 0vw 0vw 0vw 0.3vw;
-}
-
-.box1 {
-    background-color: rgb(var(--independence));
-    border: 1px solid rgb(var(--independence));
-    border-radius: 15%;
-}
-
-.box2 {
-    background-color: rgb(var(--candypink));
-    border: 1px solid rgb(var(--candypink));
-    border-radius: 15%;
-}
-
-.box3 {
-    background-color: rgb(var(--babyblueeyes));
-    border: 1px solid rgb(var(--babyblueeyes));
-    border-radius: 15%;
-}
 
 
 
