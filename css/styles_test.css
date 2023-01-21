@@ -91,6 +91,7 @@ ul {
     padding: 0;
 }
 
+/*
 .darklight .darklight_hover {
     display: none;
     position: absolute;
@@ -103,6 +104,7 @@ ul {
 .darklight:hover .darklight_hover {
     display: inline;
 }
+*/
 
 #topnav {
     grid-row: 1;
@@ -232,41 +234,6 @@ main {
     align-items: center;
 }
 
-.contact {
-    margin-right: 5vw;
-    padding: 5%;
-    border: dotted;
-}
-
-img.cartoon {
-
-}
-
-.contact .talk_btn {
-    justify-self: center;
-}
-
-.talk_btn p{
-    font-family: 'Nunito';
-    font-size: 25px;
-    color: var(--lightpink);
-    justify-self: center;
-}
-
-.talk_btn talk_txt {
-    padding: 10px;
-    background-color: var(--cornflowerblue);
-    border-color: var(--independence);
-    border-style: dashed;
-    border-radius: 50px;
-}
-
-.talk_btn talk_txt:hover {
-    box-shadow: 5px 5px 10px 2px var(--independence);
-    text-decoration: none;
-}
-*/
-
 /*footer*/
 footer {
     position: fixed;
@@ -277,12 +244,13 @@ footer {
     border-top: 2px solid rgb(var(--independence));
 }
 
-.footnav {
+.foot_menu {
     position: fixed;
     display: inline-block;
     padding: 20px;
 }
 
+/*
 .github {
     position: fixed;
     bottom: 1vw;
@@ -300,11 +268,14 @@ footer {
 .github:hover .github_hover {
     display: inline;
 }
+*/
 
+/*
 .linkedin {
     position: fixed;
     bottom: 1vw;
-    margin-left: 7vw;
+    left: 7vw;
+    padding-left: 1%;
 }
 
 .linkedin .linkedin_hover {
@@ -318,7 +289,9 @@ footer {
 .linkedin:hover .linkedin_hover {
     display: inline;
 }
+*/
 
+/*
 .email {
     position: fixed;
     bottom: .9vw;
@@ -336,7 +309,7 @@ footer {
 .email:hover .email_hover {
     display: inline;
 }
-
+*/
 
 
 
