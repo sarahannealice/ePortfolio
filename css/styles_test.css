@@ -55,6 +55,7 @@ ul {
     float: right;
     overflow: hidden;
     padding: 0;
+    margin-right: 0;
     border: dotted;
 }
 
@@ -102,6 +103,7 @@ ul {
     grid-row: 1;
     grid-column: 1;
     border: dotted;
+    margin-left: 0;
 }
 
 header {
@@ -122,6 +124,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: auto;
+    margin-left: 5vw;
     align-items: center;
 }
 
@@ -149,7 +152,7 @@ header {
     width: 100%;
     height: 100%;
     border-width: 50px;
-    border-image: linear-gradient(to bottom, rgb(var(--dark-blue)), rgb(var(--light-orange))) 1;
+    border-image: linear-gradient( rgba(var(--pastelpink), 1) 0%, rgba(var(--independence), .8) 100%) 1;
     z-index: -1;
 }
 
@@ -157,7 +160,7 @@ header {
     content: "";
     display: block;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(var(--pastelpink), 0), rgba(var(--independence), 0.25));
+    background-image: linear-gradient(to bottom, rgba(var(--pastelpink), 0), rgba(var(--candypink), 0.25));
     backdrop-filter: blur(2px);
     filter: saturate(110%) contrast(150%) brightness(70%);
     -webkit-backdrop-filter: blur(2px);
@@ -197,12 +200,11 @@ h1 {
 
 h2 {
     font-family: 'Nunito', sans-serif;
-    font-size: 0.6;
+    font-size: 1vw;
     font-weight: 10;
     text-transform: lowercase;
-    margin: 1%;
+    margin: auto;
     width: 100%;
-    border: dotted;
 }
 
 .outer-container {
@@ -214,7 +216,6 @@ h2 {
 .row {
     display: flex;
     justify-content: space-between;
-    border: dotted;
 }
 
 .boxes {
@@ -328,3 +329,13 @@ footer {
 .email:hover .email_hover {
     display: inline;
 }
+
+
+
+
+
+
+/*
+background: rgb(87,77,104);
+background: linear-gradient(90deg, rgba(87,77,104,1) 0%, rgba(238,198,203,1) 50%, rgba(171,210,250,1) 100%);
+*/
