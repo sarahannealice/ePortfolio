@@ -44,7 +44,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: rgb(var(--independence));
 }
 
 header {
@@ -86,15 +85,17 @@ ul {
 }
 
 #topnav li a {
-    color: var(--independence);
+    color: rgb(var(--independence));
+    font-size: 16px;
+    font-weight: 500;
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    font-size: 16px;
 }
 
 #topnav li a:hover {
-    color: var(--babyblueeyes);
+    color: rgb(var(--cornflowerblue));
+    font-weight: 550;
 }
 
 .darklight {
@@ -127,7 +128,6 @@ ul {
     margin-right: 5vw;
     padding-right: 15vw;
     align-items: center;
-    border: dotted;
 }
 
 #wrapper .outer-container {
@@ -135,16 +135,15 @@ ul {
     margin-left: 10vw;
     overflow: hidden;
     width: 100%;
-    border: dotted;
 }
 
 #wrapper .inner-container {
-    border: 1px solid rgb(var(--pastelpink));
+    border: 1px solid rgb(var(--independence));
     border-radius: 0.5rem;
 }
 
 #wrapper .inner-container-content {
-    border: 1px solid rgb(var(--pastelpink));
+    border: 1px solid rgb(var(--independence));
     border-radius: 0.5rem;
     position: relative;
     flex-wrap: wrap;
@@ -177,10 +176,9 @@ ul {
     align-items: center;
 }
 
-
-
 p {
-    font-weight: 350;
+    color: rgb(var(--independence));
+    font-weight: 400;
     line-height: 1rem;
 }
 
@@ -194,7 +192,8 @@ h1 {
     color: rgb(var(--independence));
     text-transform: uppercase;
     line-height: 90%;
-    padding: 5px;
+    margin-top: 20px;
+    padding-bottom: 15px;
     text-shadow: 0px 2px 10px rgba(var(--candypink),0.7);
 }
 
@@ -206,7 +205,7 @@ h1 {
 h2 {
     font-family: 'Nunito', sans-serif;
     font-size: 1vw;
-    font-weight: 10;
+    font-weight: 100;
     text-transform: lowercase;
     margin: auto;
     width: 100%;
@@ -237,16 +236,12 @@ main {
 footer {
     position: fixed;
     bottom: 0px;
+    margin-left: 5vw;
+    float: left;
+    text-align: center;
 
-    align-items: flex-start;
     background-color: rgb(var(--lightpink));
-    border-top: 2px solid rgb(var(--independence));
-}
-
-.foot_menu {
-    position: fixed;
-    display: inline-block;
-    padding: 20px;
+    border-top: 2px solid rgb(var(--cornflowerblue));
 }
 
 /*
