@@ -243,10 +243,15 @@ main {
     */
     grid-column: 3;
     margin-right: 10vw;
-    margin-top: 5vh;
+    margin-top: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+main .talk_btn {
+    grid-column: 3;
+    padding-left: 10vw;
 }
 
 /*footer*/
