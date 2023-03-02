@@ -33,7 +33,7 @@ most recent update: march 1, 2023
 html, body {
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -246,10 +246,7 @@ h2 {
 
 
 /*****img*****/
-main {
-    /*
-    grid-row: 2;
-    */
+#main {
     grid-column: 3;
     margin-right: 10vw;
     margin-top: 25vh;
@@ -258,9 +255,54 @@ main {
     align-items: center;
 }
 
-main .talk_btn {
+#main .talk_btn {
     grid-column: 3;
     padding-left: 10vw;
+}
+
+
+
+/*****projects*****/
+
+main {
+    margin: auto;
+    margin-top: 10vw;
+}
+
+
+
+main .card {
+    margin: auto;
+    display: flex;
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgb(var(--independence));
+    border-radius: 0.5rem;
+}
+
+main .card img {
+    cursor: pointer;
+}
+
+main h2 {
+    font-size: calc(8px + 0.3vw);
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    margin: 1%;
+    padding: 1%;
+    width: 50%;
+}
+
+main .column-content {
+    width: 100%;
+}
+
+main .column-content .outer-container-text {
+    padding: 0;
 }
 
 
@@ -275,11 +317,6 @@ footer {
     padding-top: 2vh;
     padding-bottom: 1vh;
     text-align: start;
-
-    /*
-    background-color: rgb(var(--lightpink));
-    border-top: 2px solid rgb(var(--cornflowerblue));
-    */
 }
 
 .foot_menu li {
@@ -355,7 +392,7 @@ footer {
 
 @media only screen and (max-width: 900px) {
 
-    main {
+    #main {
         visibility: hidden;
     }
 
@@ -367,4 +404,11 @@ footer {
     .outer-container {
         margin-right: auto;
     }
+}
+
+
+
+
+/*//--------------desktop layout--------------//*/
+@media only screen and (min-width: 901px) {
 }
