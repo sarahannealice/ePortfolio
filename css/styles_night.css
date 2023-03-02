@@ -3,6 +3,10 @@
 /*
 author: sarah newman
 date: december 14, 2022
+
+---night mode stylesheet---
+
+most recent update: march 1, 2023
 */
 
 /*colour variables*/
@@ -18,6 +22,7 @@ date: december 14, 2022
 }
 
 
+
 /*base layout*/
 * {
     margin: auto;
@@ -28,7 +33,7 @@ date: december 14, 2022
 html, body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body {
@@ -36,11 +41,9 @@ body {
     left: 5vw;
     right: 5vw;
     display: grid;
-    grid-template-rows: 1fr, 9fr;
-    grid-template-columns: 1fr, 3fr, 2fr;
     word-break: normal;
-    background: rgb(var(--lightpink));
-    background: linear-gradient(to bottom, rgba(var(--lightpink),0) 10%, rgba(var(--lightpink),1) 100%), url("../images/background_day.jpg");
+    background: rgb(var(--independence));
+    background: linear-gradient(to bottom, rgba(var(--independence),0) 10%, rgba(var(--independence),1) 90%), url("../images/background_night.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,20 +60,19 @@ header {
     padding-top: 0.5%;
 }
 
-/*top nav menu*/
+
+
+/*****top nav menu*****/
 .logo {
-    /*
     grid-row: 1;
-    grid-column: 1;*/
+    grid-column: 1;
     margin-left: 0;
 }
 
-/*
 #topnav {
     grid-row: 1;
     grid-column: 2/span 2;
 }
-*/
 
 ul {
     list-style-type: none;
@@ -88,7 +90,7 @@ ul {
 }
 
 #topnav li a {
-    color: rgb(var(--independence));
+    color: rgb(var(--pastelpink));
     font-size: 16px;
     font-weight: 500;
     text-align: center;
@@ -97,14 +99,18 @@ ul {
 }
 
 #topnav li a:hover {
-    color: rgb(var(--cornflowerblue));
+    color: rgb(var(--candypink));
     font-weight: 550;
 }
 
-.darklight {
+.daynight {
     position: relative;
     display: inline-block;
-    padding: 0;
+    padding: 0%;
+}
+
+.night_mode {
+    visibility: hidden;
 }
 
 /*
@@ -122,39 +128,42 @@ ul {
 }
 */
 
+
+
+/*****text container*****/
 #wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding-right: 15vw;
+    margin-top: 30vh;
+    padding-right: 23vw;
     align-items: center;
 }
 
-#wrapper .outer-container {
+.outer-container {
     margin-left: 10vw;
     overflow: hidden;
     width: 100%;
 }
 
-#wrapper .outer-container-text {
-    margin-left: 5vw;
-    color: rgb(var(--independence));
+.outer-container-text {
+    color: rgb(var(--cornflowerblue));
+    padding: .2vw;
+    padding-left: .5vw;
 }
 
-#wrapper .inner-container {
-    border: 1px solid rgb(var(--independence));
+.inner-container {
+    border: 1px solid rgb(var(--cornflowerblue));
     border-radius: 0.5rem;
 }
 
-#wrapper .inner-container-content {
-    border: 1px solid rgb(var(--independence));
+.inner-container-content {
+    border: 1px solid rgb(var(--cornflowerblue));
     border-radius: 0.5rem;
     position: relative;
     flex-wrap: wrap;
 }
 
-#wrapper .inner-container {
+.inner-container {
     position: absolute;
     padding: 0;
     left: -50px;
@@ -162,27 +171,27 @@ ul {
     width: 100%;
     height: 100%;
     border-width: 50px;
-    border-image: linear-gradient( rgba(var(--pastelpink), 1) 0%, rgba(var(--independence), .8) 100%) 1;
+    border-image: linear-gradient( rgba(var(--independence), 1) 0%, rgba(var(--pastelpink), .8) 100%) 1;
     z-index: -1;
 }
 
-#wrapper .inner-container::after {
+.inner-container::after {
     content: "";
     display: block;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(var(--pastelpink), 0), rgba(var(--candypink), 0.25));
-    backdrop-filter: blur(2px);
+    background-image: linear-gradient(to bottom, rgba(var(--independence), 0), rgba(var(--cornflowerblue), 0.25));
+    backdrop-filter: blur(5px);
     filter: saturate(110%) contrast(150%) brightness(70%);
-    -webkit-backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(5px);
     -webkit-filter: saturate(110%) contrast(150%) brightness(90%);
 }
 
-#wrapper .row1 {
+.row1 {
     align-items: center;
 }
 
 p {
-    color: rgb(var(--independence));
+    color: rgb(var(--bl));
     font-weight: 400;
     line-height: 1rem;
 }
@@ -193,23 +202,30 @@ p {
 
 h1 {
     font-weight: 400;
-    font-size: 1.2vw;
-    color: rgb(var(--independence));
+    font-size: 1.2rem;
+    color: rgb(var(--pastelpink));
     text-transform: uppercase;
     line-height: 90%;
     margin-top: 20px;
     padding-bottom: 15px;
-    text-shadow: 0px 2px 10px rgba(var(--candypink),0.7);
+    text-shadow: 0px 2px 10px rgba(var(--pastelpink),0.7);
+}
+
+.column {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .5rem;
 }
 
 .column bug_txt {
     font-weight: 400;
-    font-size: 2.6vw;
+    font-size: 2.6rem;
+    line-height: 2.6rem;
 }
 
 h2 {
     font-family: 'Nunito', sans-serif;
-    font-size: 1vw;
+    font-size: 1rem;
     font-weight: 100;
     text-transform: lowercase;
     margin: auto;
@@ -217,7 +233,7 @@ h2 {
 }
 
 .outer-container {
-    border: 2px solid rgb(var(--independence));
+    border: 2px solid rgb(var(--pastelpink));
     border-radius: 0.5rem;
     padding: 0rem 0.3rem 0.3rem 0.3rem;
 }
@@ -228,27 +244,52 @@ h2 {
 }
 
 
-/*img/let's talk details*/
+
+/*****img*****/
 main {
+    /*
     grid-row: 2;
+    */
     grid-column: 3;
+    margin-right: 10vw;
+    margin-top: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/*footer*/
-footer {
-    position: fixed;
-    bottom: 0px;
-    margin-left: 5vw;
-    float: left;
-    text-align: center;
-
-    background-color: rgb(var(--lightpink));
-    border-top: 2px solid rgb(var(--cornflowerblue));
+main .talk_btn {
+    grid-column: 3;
+    padding-left: 10vw;
 }
 
+
+
+/*****footer*****/
+footer {
+    position: fixed;
+    bottom: 0;
+    grid-column: span 3;
+    width: 100%;
+    padding-left: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    text-align: start;
+
+    /*
+    background-color: rgb(var(--lightpink));
+    border-top: 2px solid rgb(var(--cornflowerblue));
+    */
+}
+
+.foot_menu li {
+    display: inline-block;
+    width: 35px;
+}
+
+
+
+/*****to add hover effect*****/
 /*
 .github {
     position: fixed;
@@ -307,5 +348,23 @@ footer {
 
 .email:hover .email_hover {
     display: inline;
+}*/
+
+
+/*//--------------mobile layout--------------//*/
+
+@media only screen and (max-width: 900px) {
+
+    main {
+        visibility: hidden;
+    }
+
+    #wrapper {
+        grid-column: span 3;
+        margin-right: 0;
+    }
+    
+    .outer-container {
+        margin-right: auto;
+    }
 }
-*/
