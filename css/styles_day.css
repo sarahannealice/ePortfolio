@@ -313,68 +313,35 @@ footer {
     width: 20px;
 }
 
+/*tooltip: https://www.w3schools.com/css/css_tooltip.asp*/
 
-
-/*****to add hover effect*****/
-/*
-.github {
-    position: fixed;
-    bottom: 1vw;
-    margin-left: 5vw;
+.tooltip {
+    position: relative;
+    display: inline-block;
 }
 
-.github .github_hover {
-    display: none;
+.tooltip .tooltip_night{
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--independence);
+    color: var(--babyblueeyes);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    left: 50%;
+    margin-left: -60px;
+    
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
+    z-index: 1;
+
+    bottom:150%;
 }
 
-.github:hover .github_hover {
-    display: inline;
-}
-*/
-
-/*
-.linkedin {
-    position: fixed;
-    bottom: 1vw;
-    left: 7vw;
-    padding-left: 1%;
+.tooltip .tooltip_night:hover {
+    visibility: visible;
+    font-weight: 300;
 }
 
-.linkedin .linkedin_hover {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-
-.linkedin:hover .linkedin_hover {
-    display: inline;
-}
-*/
-
-/*
-.email {
-    position: fixed;
-    bottom: .9vw;
-    left: 10vw;
-}
-
-.email .email_hover {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-
-.email:hover .email_hover {
-    display: inline;
-}*/
 
 
 /*//--------------mobile layout (cell & tablet)--------------//*/
