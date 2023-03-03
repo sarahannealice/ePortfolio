@@ -292,6 +292,11 @@ footer {
 /*//--------------mobile layout (tablet)--------------//*/
 @media only screen and (min-width: 375px) and (max-width: 872px) {
     
+    main {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
     /*****text container*****/
     #wrapper {
         display: flex;
@@ -318,6 +323,8 @@ footer {
 
     main {
         display: flex;
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
 
     /*****text container*****/
