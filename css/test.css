@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/*
+author: sarah newman
+date: december 14, 2022
+
+---day mode/default stylesheet---
+
+most recent update: march 3, 2023
+*/
+
+/*****colour variables*****/
+:root {
+    --fadedbabyblueeyes: 171,210,250,60;/*#abd2fa60*/
+    --fadedcornflowerblue: 118,146,255,60;/*#7692ff60*/
+    --babyblueeyes: 171,210,250;/*#abd2fa*/
+    --cornflowerblue: 118,146,255;/*#7692ff*/
+    --deep_purple: 42,31,62;/*#2A1F3E*/
+    --independence: 87,77,104;/*#574d68*/
+    --candypink: 224,119,125;/*#e0777d*/
+    --pastelpink: 223,174,180;/*#dfaeb4*/
+    --lightpink: 238,198,203;/*#eec6cb*/
+}
+
+
+
+/*****base layout*****/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    word-break: normal;
+    color: white;
+    background: linear-gradient(to bottom, rgba(var(--lightpink),0) 10%, rgba(var(--lightpink),1) 90%), url("../images/background_day.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 5vw;
+    right: 5vw;
+    display: flex;
+    margin: auto;
+    margin-bottom: auto;
+    padding-top: .5%;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1rem;
+}
+
+
+
+/*****top nav menu*****/
+.logo {
+    float: left;
+    margin-left: 0;
+}
+
+#topnav {
+    right: 0;
+    overflow: hidden;
+    padding: 0;
+    margin-right: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#topnav li {
+    display: inline;
+}
+
+#topnav li a {
+    color:rgb( var(--independence));
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#topnav li a:hover {
+    color: rgb(var(--cornflowerblue));
+    font-weight: 550;
+}
+
+
+
+/*****day-night mode*****/
+.daynight {
+    position: relative;
+    display: inline-block;
+    padding: 0%;
+}
+
+.day_mode {
+    visibility: hidden;
+}
+
+
+
+/*****text container*****/
+.outer-container {
+    overflow: hidden;
+    width: 100%;
+    border: 2px solid rgb(var(--independence));
+    border-radius: .5rem;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+}
+
+
+
+
+
+
+
+
+/*//--------------mobile layout (cell)--------------//*/
+@media only screen and (max-width: 374) {
+}
+
+
+
+/*//--------------mobile layout (tablet)--------------//*/
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    
+    /*****text container*****/
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        align-items: center;
+    }
+
+}
+
+
+
+/*//--------------in-between layout (split-screen)--------------//*/
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+    
+    /*****text container*****/
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        align-items: center;
+    }
+
+}
+
+
+
+/*//--------------desktop layout--------------//*/
+@media only screen and (min-width: 901px) {
+    
+    /*****text container*****/
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
+        margin-left: 5vw;
+        margin-right: 35vw;
+        align-items: center;
+    }
+}

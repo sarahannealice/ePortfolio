@@ -252,7 +252,6 @@ h2 {
 
 /*****projects*****/
 main {
-    grid-column: span 3;
     width: 100%;
     margin: auto;
     margin-right: 10vw;
@@ -313,8 +312,33 @@ footer {
     width: 20px;
 }
 
-/*tooltip: https://www.w3schools.com/css/css_tooltip.asp*/
 
+
+/*//--------------mobile layout (cell & tablet)--------------//*/
+
+@media only screen and (max-width: 768px) {
+
+    #main {
+        visibility: hidden;
+    }
+
+    #wrapper {
+        grid-column: span 3;
+        margin-right: 0;
+    }
+    
+    .outer-container {
+        margin-right: auto;
+    }
+}
+
+
+
+
+/*//--------------desktop layout--------------//*/
+@media only screen and (min-width: 901px) {
+    
+/*tooltip: https://www.w3schools.com/css/css_tooltip.asp*/
 .tooltip {
     position: relative;
     display: inline-block;
@@ -341,30 +365,4 @@ footer {
     visibility: visible;
     font-weight: 300;
 }
-
-
-
-/*//--------------mobile layout (cell & tablet)--------------//*/
-
-@media only screen and (max-width: 768px) {
-
-    #main {
-        visibility: hidden;
-    }
-
-    #wrapper {
-        grid-column: span 3;
-        margin-right: 0;
-    }
-    
-    .outer-container {
-        margin-right: auto;
-    }
-}
-
-
-
-
-/*//--------------desktop layout--------------//*/
-@media only screen and (min-width: 901px) {
 }
