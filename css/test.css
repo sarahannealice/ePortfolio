@@ -216,6 +216,7 @@ footer {
     width: 100%;
     padding-left: 5vw;
     padding-bottom: 1vh;
+    background-color: rgb(var(--pastelpink));
 }
 
 .foot_menu li {
