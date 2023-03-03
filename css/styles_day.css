@@ -265,11 +265,13 @@ h2 {
 /*****projects*****/
 
 main {
+    grid-column: span 3;
+    width: 100%;
     margin: auto;
-    margin-top: 10vw;
+    margin-right: 10vw;
+    display: inline-block;
+    width: 25%;
 }
-
-
 
 main .card {
     margin: auto;
@@ -297,11 +299,11 @@ main h2 {
     width: 50%;
 }
 
-main .column-content {
-    width: 100%;
+main .project_content {
+    width: 25%;
 }
 
-main .column-content .outer-container-text {
+main .outer-container-text {
     padding: 0;
 }
 
@@ -388,9 +390,9 @@ footer {
 }*/
 
 
-/*//--------------mobile layout--------------//*/
+/*//--------------mobile layout (cell & tablet)--------------//*/
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
 
     #main {
         visibility: hidden;
