@@ -217,6 +217,7 @@ footer {
     padding-left: 5vw;
     padding-bottom: 1vh;
     background-color: rgb(var(--lightpink));
+    margin-top: 20%;
 }
 
 .foot_menu li {
@@ -311,12 +312,12 @@ footer {
         margin-left: 10vw;
         margin-right: 10vw;
         align-items: center;
-        padding-bottom: 20%;
     }
 
     #contact .cartoon {
         display: block;
         margin: 0 auto;
+        padding-top: 0.5%;
         padding-bottom: 20%;
         
     }
