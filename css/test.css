@@ -89,7 +89,7 @@ ul {
 }
 
 #topnav li a {
-    color:rgb( var(--independence));
+    color: rgb(var(--independence));
     font-size: 16px;
     font-weight: 500;
     text-align: center;
@@ -127,7 +127,7 @@ ul {
 }
 
 .outer-container-text {
-    color: rgb( var(--independence));
+    color: rgb(var(--independence));
     padding: 0.5vw;
     padding-left: 0.5vw;
 }
@@ -135,13 +135,13 @@ ul {
 /*underlines outer container text*/
 /*
 .inner-container {
-    border: 1px solid rgb( var(--independence));
+    border: 1px solid rgb(var(--independence));
     border-radius: 0.5rem;
 }
 */
 
 .inner-container-content {
-    border: 1px solid rgb( var(--independence));
+    border: 1px solid rgb(var(--independence));
     border-radius: 0.5rem;
     position: relative;
     flex-wrap: wrap;
@@ -204,6 +204,55 @@ h2 {
 
 
 
+/*****footer*****/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-left: 5vw;
+    padding-bottom: 1vh;
+}
+
+.foot_menu li {
+    display: inline-block;
+    width: 20px;
+}
+
+
+
+/*tooltip: https://www.w3schools.com/css/css_tooltip.asp*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip_night {
+    visibility: hidden;
+    width: 110px;
+    background-color: rgb(var(--deep_purple));
+    color: white;
+    text-align: center;
+    padding: 3px 0;
+    border-radius: 6px;
+    
+    /*positioning*/
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.tooltip:hover .tooltip_night {
+    visibility: visible;
+    font-weight: 300;
+}
+
+.tooltip .tooltip_day {
+    visibility: hidden;
+}
+
+
 
 
 
@@ -212,7 +261,7 @@ h2 {
 @media only screen and (max-width: 374) {
     
     /*****img*****/
-    #contact .ribbon {
+    #contact .cartoon {
         visibility: hidden;
     }
 }
@@ -220,7 +269,7 @@ h2 {
 
 
 /*//--------------mobile layout (tablet)--------------//*/
-@media only screen and (min-width: 374px) and (max-width: 768px) {
+@media only screen and (min-width: 374px) and (max-width: 872px) {
     
     /*****text container*****/
     #wrapper {
@@ -232,33 +281,6 @@ h2 {
         align-items: center;
     }
 
-    /*****img*****/
-    #contact .ribbon {
-        visibility: hidden;
-    }
-
-
-}
-
-
-
-/*//--------------in-between layout (split-screen)--------------//*/
-@media only screen and (min-width: 768px) and (max-width: 872px) {
-    
-    /*****text container*****/
-    #wrapper {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20vh;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        align-items: center;
-    }
-
-    /*****img*****/
-    #contact .ribbon {
-        visibility: hidden;
-    }
 
 }
 
@@ -289,7 +311,5 @@ h2 {
 
     }
 
-    #contact .cartoon {
-        visibility: hidden;
-    }
+
 }

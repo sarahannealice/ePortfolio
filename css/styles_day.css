@@ -347,8 +347,8 @@ footer {
 .tooltip .tooltip_night{
     visibility: hidden;
     width: 120px;
-    background-color: var(--independence);
-    color: var(--babyblueeyes);
+    background-color: rgb(var(--independence));
+    color: rgb(var(--babyblueeyes));
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
