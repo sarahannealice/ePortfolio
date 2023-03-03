@@ -103,6 +103,9 @@ ul {
     font-weight: 550;
 }
 
+
+
+/*****day-night mode*****/
 .daynight {
     position: relative;
     display: inline-block;
@@ -112,21 +115,6 @@ ul {
 .night_mode {
     visibility: hidden;
 }
-
-/*
-.darklight .darklight_hover {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    padding: 0;
-}
-
-.darklight:hover .darklight_hover {
-    display: inline;
-}
-*/
 
 
 
@@ -287,7 +275,7 @@ footer {
 
 .foot_menu li {
     display: inline-block;
-    width: 35px;
+    width: 20px;
 }
 
 
@@ -354,11 +342,12 @@ footer {
 }*/
 
 
-/*//--------------mobile layout--------------//*/
 
-@media only screen and (max-width: 900px) {
+/*//--------------mobile layout (cell & tablet)--------------//*/
 
-    main {
+@media only screen and (max-width: 768px) {
+
+    #main {
         visibility: hidden;
     }
 
@@ -370,4 +359,11 @@ footer {
     .outer-container {
         margin-right: auto;
     }
+}
+
+
+
+
+/*//--------------desktop layout--------------//*/
+@media only screen and (min-width: 901px) {
 }
