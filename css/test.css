@@ -59,6 +59,7 @@ header {
     margin-bottom: auto;
     padding-top: 0.5%;
     background-color: rgb(var(--lightpink));
+    z-index: 2;
 }
 
 p {
