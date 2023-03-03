@@ -262,29 +262,13 @@ footer {
 /*//--------------mobile layout (cell)--------------//*/
 @media only screen and (max-width: 374) {
     
-    /*****text container*****/
-    #wrapper {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20vh;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        align-items: center;
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 15vh;
     }
 
 
-
-    /*****img*****/
-    #contact .cartoon {
-        visibility: hidden;
-    }
-}
-
-
-
-/*//--------------mobile layout (tablet)--------------//*/
-@media only screen and (min-width: 374px) and (max-width: 872px) {
-    
     /*****text container*****/
     #wrapper {
         display: flex;
@@ -296,12 +280,41 @@ footer {
     }
 
 
+    
+    /*****img*****/
+    #contact .cartoon{
+        visibility: hidden;
+    }
+}
+
+
+
+/*//--------------mobile layout (tablet)--------------//*/
+@media only screen and (min-width: 375px) and (max-width: 872px) {
+    
+    /*****text container*****/
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        align-items: center;
+    }
+
+    #contact .cartoon {
+        display: block;
+        margin: 0 auto;
+        padding-top: 2%;
+        
+    }
+
 }
 
 
 
 /*//--------------desktop layout--------------//*/
-@media only screen and (min-width: 872px) {
+@media only screen and (min-width: 873px) {
 
     main {
         display: flex;
@@ -320,9 +333,8 @@ footer {
     /*****img*****/
     #contact {
         display: flex;
-        margin-top: 20vh;
+        margin-top: 23vh;
         margin-right: 10vw;
-
     }
 
 
