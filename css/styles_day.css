@@ -9,12 +9,13 @@ date: december 14, 2022
 most recent update: march 1, 2023
 */
 
-/*colour variables*/
+/*****colour variables*****/
 :root {
     --fadedbabyblueeyes: 171,210,250,60;/*#abd2fa60*/
     --fadedcornflowerblue: 118,146,255,60;/*#7692ff60*/
     --babyblueeyes: 171,210,250;/*#abd2fa*/
     --cornflowerblue: 118,146,255;/*#7692ff*/
+    --deep_purple: 42,31,62;/*#2A1F3E*/
     --independence: 87,77,104;/*#574d68*/
     --candypink: 224,119,125;/*#e0777d*/
     --pastelpink: 223,174,180;/*#dfaeb4*/
@@ -23,7 +24,7 @@ most recent update: march 1, 2023
 
 
 
-/*base layout*/
+/*****base layout*****/
 * {
     margin: auto;
     padding: 0;
@@ -48,6 +49,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 header {
     position: fixed;
@@ -117,7 +119,6 @@ ul {
 }
 
 
-
 /*****text container*****/
 #wrapper {
     display: flex;
@@ -131,11 +132,14 @@ ul {
     margin-left: 10vw;
     overflow: hidden;
     width: 100%;
+    border: 2px solid rgb(var(--independence));
+    border-radius: 0.5rem;
+    padding: 0rem 0.3rem 0.3rem 0.3rem;
 }
 
 .outer-container-text {
     color: rgb(var(--independence));
-    padding: .2vw;
+    padding: .5vw;
     padding-left: .5vw;
 }
 
@@ -220,12 +224,6 @@ h2 {
     width: 100%;
 }
 
-.outer-container {
-    border: 2px solid rgb(var(--independence));
-    border-radius: 0.5rem;
-    padding: 0rem 0.3rem 0.3rem 0.3rem;
-}
-
 .row {
     display: flex;
     justify-content: space-between;
@@ -251,7 +249,6 @@ h2 {
 
 
 /*****projects*****/
-
 main {
     grid-column: span 3;
     width: 100%;
