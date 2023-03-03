@@ -20,6 +20,7 @@ most recent update: march 3, 2023
     --candypink: 224,119,125;/*#e0777d*/
     --pastelpink: 223,174,180;/*#dfaeb4*/
     --lightpink: 238,198,203;/*#eec6cb*/
+    --peach: 255,228,217;/*#ffe4d9*/
 }
 
 
@@ -58,7 +59,7 @@ header {
     margin: auto;
     margin-bottom: auto;
     padding-top: 0.5%;
-    background-color: rgb(var(--lightpink));
+    background-color: rgb(var(--peach));
     z-index: 2;
 }
 
@@ -294,13 +295,6 @@ footer {
 /*//--------------mobile layout (tablet)--------------//*/
 @media only screen and (min-width: 375px) and (max-width: 872px) {
 
-    
-    body {
-        background: linear-gradient(to bottom, rgba(var(--lightpink),0) 10%, rgba(var(--lightpink),1) 90%), url("../images/background_day_mobile.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     /*****text container*****/
     #wrapper {
         display: flex;
