@@ -220,6 +220,19 @@ h2 {
 
 
 
+/*****resume link*****/
+main .resume a:link {
+    color: rgb(var(--babyblueeyes));
+}
+
+main .resume a:visited {
+    color: rgb(var(--cornflowerblue));
+}
+
+
+
+
+
 /*****footer*****/
 footer {
     position: fixed;
@@ -227,8 +240,8 @@ footer {
     width: 100%;
     padding-left: 5vw;
     padding-bottom: 1vh;
+    padding-top: 1vh;
     background-color: rgb(var(--lightpink));
-    margin-top: 20%;
 }
 
 .foot_menu li {
@@ -308,7 +321,7 @@ footer {
 
 /*//--------------mobile layout (tablet)--------------//*/
 @media only screen and /*(min-width: 401px) and */ (max-width: 872px) {
-    
+
     /*****text container*****/
     #wrapper {
         display: flex;
@@ -318,7 +331,8 @@ footer {
         margin-right: 10vw;
         align-items: center;
     }
-
+    
+    /*****cartoon*****/
     #contact {
         position: relative;
     }
@@ -358,7 +372,7 @@ footer {
         align-items: center;
     }
 
-    /*****img*****/
+    /*****cartoon*****/
     #contact {
         position: relative;
         display: flex;
@@ -376,5 +390,7 @@ footer {
         z-index: 1;
     }
 
+    /*****projects*****/
+    
 
 }
