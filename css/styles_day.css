@@ -283,7 +283,7 @@ footer {
 }
 
 /*header*/
-header .tooltip .tooltip_header_night {
+.tooltip .tooltip_header_night {
     visibility: hidden;
     width: 110px;
     background-color: rgb(var(--deeppurple));
@@ -300,7 +300,7 @@ header .tooltip .tooltip_header_night {
     margin-left: -40px;
 }
 
-header .tooltip:hover .tooltip_header_night {
+.tooltip:hover .tooltip_header_night {
     visibility: visible;
     font-weight: 300;
 }
