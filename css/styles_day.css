@@ -323,12 +323,13 @@ footer {
         margin: 0 auto;
         padding-top: 1%;
         padding-bottom: 20%;
-        z-index: 2;
     }
 
     #contact .cartoon_night {
         position: absolute;
-        z-index: 1;
+        top: 0;
+        padding-top: 1%;
+        z-index: -1;
     }
 }
 
@@ -353,9 +354,20 @@ footer {
 
     /*****img*****/
     #contact {
+        position: relative;
         display: flex;
         margin-top: 23vh;
         margin-right: 10vw;
+    }
+
+    #contact .cartoon_day {
+        position: relative;
+        z-index: 2;
+    }
+
+    #contact .cartoon_night {
+        position: absolute;
+        z-index: 1;
     }
 
 
