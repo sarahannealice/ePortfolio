@@ -127,10 +127,6 @@ ul {
     visibility: hidden;
 }
 
-.cartoon_night {
-    visibility: hidden;
-}
-
 
 
 /*****text container*****/
@@ -244,6 +240,24 @@ h2 {
 
 
 
+/*****cartoon*****/
+#contact {
+    position: relative;
+}
+
+#contact .cartoon_day {
+    position: relative;
+}
+
+#contact .cartoon_night {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+
+
 /*****footer*****/
 footer {
     position: fixed;
@@ -262,12 +276,36 @@ footer {
 
 
 
-/*tooltip: https://www.w3schools.com/css/css_tooltip.asp*/
+/*****tooltip: https://www.w3schools.com/css/css_tooltip.asp*****/
 .tooltip {
     position: relative;
     display: inline-block;
 }
 
+/*header*/
+.tooltip .tooltip_header_night {
+    visibility: hidden;
+    width: 110px;
+    background-color: rgb(var(--deeppurple));
+    color: white;
+    text-align: center;
+    padding: 3px 0;
+    border-radius: 6px;
+    
+    /*positioning*/
+    position: absolute;
+    z-index: 1;
+    top: 130%;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.tooltip:hover .tooltip_header_night {
+    visibility: visible;
+    font-weight: 300;
+}
+
+/*footer*/
 .tooltip .tooltip_night {
     visibility: hidden;
     width: 110px;
@@ -290,7 +328,8 @@ footer {
     font-weight: 300;
 }
 
-.tooltip .tooltip_day {
+/*tooltips hidden*/
+.tooltip .tooltip_day, .tooltip .tooltip_header_day {
     visibility: hidden;
 }
 
@@ -333,6 +372,7 @@ footer {
 /*//--------------mobile layout (tablet)--------------//*/
 @media only screen and /*(min-width: 401px) and */ (max-width: 872px) {
 
+    /*****header*****/
     header {
         padding-top: 2%;
     }
@@ -348,23 +388,11 @@ footer {
     }
     
     /*****cartoon*****/
-    #contact {
-        position: relative;
-    }
-
     #contact .cartoon_day {
-        position: relative;
         display: block;
         margin: 0 auto;
         padding-top: 1%;
         padding-bottom: 20%;
-    }
-
-    #contact .cartoon_night {
-        position: absolute;
-        top: 0;
-        padding-top: 1%;
-        z-index: -1;
     }
 }
 
@@ -389,20 +417,9 @@ footer {
 
     /*****cartoon*****/
     #contact {
-        position: relative;
         display: flex;
         margin-top: 23vh;
         margin-right: 10vw;
-    }
-
-    #contact .cartoon_day {
-        position: relative;
-        z-index: 2;
-    }
-
-    #contact .cartoon_night {
-        position: absolute;
-        z-index: 1;
     }
 
     /*****projects*****/
@@ -410,6 +427,6 @@ footer {
         display: flex;
     }
 
-    #project_content .outer_container
+    /*#project_content .outer_container*/
 
 }

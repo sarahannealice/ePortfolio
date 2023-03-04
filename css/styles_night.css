@@ -243,6 +243,23 @@ h2 {
 
 
 
+/*****cartoon*****/
+#contact {
+    position: relative;
+}
+
+#contact .cartoon_night {
+    position: relative;
+}
+
+#contact .cartoon_day {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
 /*****footer*****/
 footer {
     position: fixed;
@@ -332,6 +349,7 @@ footer {
 /*//--------------mobile layout (tablet)--------------//*/
 @media only screen and /*(min-width: 401px) and */ (max-width: 872px) {
     
+    /*****header*****/
     header {
         padding-top: 2%;
     }
@@ -346,23 +364,13 @@ footer {
         align-items: center;
     }
 
-    #contact {
-        position: relative;
-    }
-
+    /*****cartoon*****/
     #contact .cartoon_night {
-        position: relative;
         display: block;
         margin: 0 auto;
         padding-top: 1%;
         padding-bottom: 20%;
     }
-
-    #contact .cartoon_day {
-        position: absolute;
-        z-index: -1;
-    }
-
 }
 
 
@@ -384,23 +392,10 @@ footer {
         align-items: center;
     }
 
-    /*****img*****/
+    /*****cartoon*****/
     #contact {
-        position: relative;
         display: flex;
         margin-top: 23vh;
         margin-right: 10vw;
     }
-    
-    #contact .cartoon_night {
-        position: relative;
-        z-index: 2;
-    }
-
-    #contact .cartoon_day {
-        position: absolute;
-        z-index: 1;
-    }
-
-
 }
