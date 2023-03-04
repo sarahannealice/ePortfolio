@@ -266,9 +266,6 @@ footer {
 
 
 
-
-
-
 /*//--------------mobile layout (cell)--------------//*/
 /*
 @media only screen and (max-width: 400) {
@@ -316,11 +313,22 @@ footer {
         align-items: center;
     }
 
+    #contact {
+        position: relative;
+    }
+
     #contact .cartoon_night {
+        position: relative;
         display: block;
         margin: 0 auto;
-        padding-top: 0.5%;
+        padding-top: 1%;
         padding-bottom: 20%;
+        z-index: 2;
+    }
+
+    #contact .cartoon_day {
+        position: absolute;
+        z-index: 1;
     }
 
 }
