@@ -336,7 +336,7 @@ footer {
         flex-direction: column;
         margin-top: 25vh;
         margin-left: 10vw;
-        margin-right: 5vw;
+        margin-right: 10vw;
         align-items: center;
     }
 
@@ -345,6 +345,7 @@ footer {
         display: flex;
         margin-top: 23vh;
         margin-right: 10vw;
+        margin-left: 0;
     }
 
 
