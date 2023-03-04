@@ -134,7 +134,7 @@ ul {
 
 
 /*****text container*****/
-.outer-container {
+#wrapper .outer-container {
     overflow: hidden;
     width: 100%;
     border: 2px solid rgb(var(--independence));
@@ -142,25 +142,25 @@ ul {
     padding: 0rem 0.5rem 0.5rem 0.5rem;
 }
 
-.outer-container-text {
+#wrapper .outer-container-text {
     color: rgb(var(--independence));
     padding: 0.5vw;
     padding-left: 0.5vw;
 }
 
-.inner-container {
+#wrapper .inner-container {
     border: 1px solid rgb(var(--independence));
     border-radius: 0.5rem;
 }
 
-.inner-container-content {
+#wrapper .inner-container-content {
     border: 1px solid rgb(var(--independence));
     border-radius: 0.5rem;
     position: relative;
     flex-wrap: wrap;
 }
 
-.inner-container {
+#wrapper .inner-container {
     position: absolute;
     left: -50px;
     top: -50px;
@@ -172,7 +172,7 @@ ul {
     z-index: -1;
 }
 
-.inner-container::after {
+#wrapper .inner-container::after {
     content: "";
     display: block;
     height: 100%;
@@ -241,8 +241,6 @@ h2 {
 .resume {
     color: rgb(var(--lipstick));
 }
-
-
 
 
 
@@ -335,6 +333,10 @@ footer {
 /*//--------------mobile layout (tablet)--------------//*/
 @media only screen and /*(min-width: 401px) and */ (max-width: 872px) {
 
+    header {
+        padding-top: 2%;
+    }
+
     /*****text container*****/
     #wrapper {
         display: flex;
@@ -404,6 +406,10 @@ footer {
     }
 
     /*****projects*****/
-    
+    #project_content {
+        display: flex;
+    }
+
+    #project_content .outer_container
 
 }
