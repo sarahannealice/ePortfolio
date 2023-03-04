@@ -15,12 +15,14 @@ most recent update: march 3, 2023
     --fadedcornflowerblue: 118,146,255,60;/*#7692ff60*/
     --babyblueeyes: 171,210,250;/*#abd2fa*/
     --cornflowerblue: 118,146,255;/*#7692ff*/
-    --deep_purple: 42,31,62;/*#2A1F3E*/
+    --deeppurple: 42,31,62;/*#2A1F3E*/
     --independence: 87,77,104;/*#574d68*/
     --candypink: 224,119,125;/*#e0777d*/
     --pastelpink: 223,174,180;/*#dfaeb4*/
     --lightpink: 238,198,203;/*#eec6cb*/
     --peach: 255,228,217;/*#ffe4d9*/
+    --lipstick: 144,31,37;/*#901F25*/
+    --wine: 64,0,3;/*#400003*/
 }
 
 
@@ -221,12 +223,23 @@ h2 {
 
 
 /*****resume link*****/
-main .resume a:link {
-    color: rgb(var(--babyblueeyes));
+.resume a:link {
+    color: rgb(var(--wine));
+    text-decoration: none;
 }
 
-main .resume a:visited {
-    color: rgb(var(--cornflowerblue));
+.resume a:visited {
+    color: rgb(var(--wine));
+    text-decoration: none;
+}
+
+.resume a:hover {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.resume {
+    color: rgb(var(--lipstick));
 }
 
 
@@ -260,7 +273,7 @@ footer {
 .tooltip .tooltip_night {
     visibility: hidden;
     width: 110px;
-    background-color: rgb(var(--deep_purple));
+    background-color: rgb(var(--deeppurple));
     color: white;
     text-align: center;
     padding: 3px 0;
