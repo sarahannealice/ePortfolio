@@ -78,6 +78,7 @@ p {
 }
 
 #topnav {
+    position: absolute;
     right: 0;
     overflow: hidden;
     padding: 0;
@@ -109,13 +110,18 @@ ul {
 
 
 /*****day-night mode*****/
-.daynight {
+#daynight {
     position: relative;
     display: inline-block;
     padding: 0%;
 }
 
+.day_mode {
+    position: relative;
+}
+
 .night_mode {
+    position: absolute;
     visibility: hidden;
 }
 
