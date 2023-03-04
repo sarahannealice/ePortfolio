@@ -15,6 +15,15 @@ most recent update: march 3, 2023
     /*****text container*****/
     #wrapper {
         padding-bottom: 20%;
+    }
+}
+
+
+/*//--------------desktop layout--------------//*/
+@media only screen and (min-width: 873px) {
+
+    /*****text container*****/
+    #wrapper {
         margin-right: 5vw;
     }
 }
