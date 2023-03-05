@@ -12,12 +12,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&
         family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link id="theme" href="css/styles_day.css" rel="stylesheet"/>
+        <!--<script scr="javascript/theme.js"></script>-->
         <script>
+            //--https://stackoverflow.com/a/18368517--//
             function switchTheme() {
-            var a = document.getElementById("theme");
-            a.x = 'styles_night' == a.x ? 'styles_day' : 'styles_night';
-            a.href = a.x + '.css';
-          }
+                var a = document.getElementById("theme");
+                a.x = 'css/styles_night' == a.x ? 'css/styles_day' : 'css/styles_night'; // short if
+                a.href = a.x + '.css';
+            }
         </script>
     </head>
 
@@ -99,7 +101,6 @@
             </div>
         </footer>
         
-        <!--<script scr="javascript/theme.js"></script>-->
     </body>
      
 
