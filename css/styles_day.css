@@ -127,6 +127,13 @@ ul {
     visibility: hidden;
 }
 
+/*button*/
+.button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 
 
 /*****text container*****/
