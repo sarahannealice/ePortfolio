@@ -11,7 +11,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&
         family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link href="css/styles_day.css" rel="stylesheet"/>        
+        <link id="theme" href="css/styles_day.css" rel="stylesheet"/>
+        <script>
+            function switchTheme() {
+            var a = document.getElementById("theme");
+            a.x = 'styles_night' == a.x ? 'styles_day' : 'styles_night';
+            a.href = a.x + '.css';
+          }
+        </script>
     </head>
 
 
@@ -37,8 +44,8 @@
                         <!--<li><a href="skills.html">skills</a></li>
                         <li><a href="contact.html">contact</a></li>-->
                         <div id="daynight">
-                            <!--<li class="tooltip">--><img src="images/icons/lightdark_dark.png" alt="" class="night_mode" aria-label="night" width="40" height="28"><!--<span class="tooltip_header_night">coming soon</span></li>-->
-                            <!--<li class="tooltip">--><img  src="images/icons/lightdark_light.png" alt="" class="day_mode" aria-label="day" width="40" height="28"><!--<span class="tooltip_header_day">coming soon</span></li>-->
+                            <!--<li class="tooltip">--><button type="button" onclick="switchTheme()"><img src="images/icons/lightdark_dark.png" alt="" class="night_mode" aria-label="night" width="40" height="28"></button><!--<span class="tooltip_header_night">coming soon</span></li>-->
+                            <!--<li class="tooltip">--><button type="button" onclick="switchTheme()"><img  src="images/icons/lightdark_light.png" alt="" class="day_mode" aria-label="day" width="40" height="28"></button><!--<span class="tooltip_header_day">coming soon</span></li>-->
                         </div>
                     </div>
                     </ul>
@@ -92,7 +99,8 @@
             </div>
         </footer>
         
-        <!--<script type="text/javascript" scr="javascript/theme.js"></script>-->
+        <!--<script scr="javascript/theme.js"></script>-->
     </body>
+     
 
 </html>
