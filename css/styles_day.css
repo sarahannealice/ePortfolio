@@ -410,6 +410,7 @@ footer {
 
     main {
         display: flex;
+        align-items: center;
     }
 
     /*****text container*****/
@@ -431,9 +432,43 @@ footer {
 
     /*****projects*****/
     #project_content {
-        display: flex;
+        justify-content: center;
+        margin-top: 20%;
+        width: 5%;
+        margin-left: 10vw;
+        margin-right: 10vw;
+
+        overflow: hidden;
+        width: 100%;
+        border: 2px solid rgb(var(--independence));
+        border-radius: 0.5rem;
+        padding: 0rem 0.5rem 0.5rem 0.5rem;
     }
 
-    /*#project_content .outer_container*/
+    #project_content + #project_content {
+        margin-left: 10px;
+    }
+    
+    #project_content .outer_container {
+        overflow: hidden;
+        width: 100%;
+        border: 2px solid rgb(var(--independence));
+        border-radius: 0.5rem;
+        padding: 0rem 0.5rem 0.5rem 0.5rem;
+    }
 
+    #project_content .outer-container-text {
+    color: rgb(var(--independence));
+    padding: 0.5vw;
+    padding-left: 0.5vw;
+    }
+
+    .card {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        border: solid 1px rgb( var(--independence));
+        border-radius: 0.5rem;
+    }
 }
