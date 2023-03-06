@@ -431,6 +431,7 @@ footer {
     }
 
     /*****projects*****/
+    /*
     #project_content {
         justify-content: center;
         margin-top: 20%;
@@ -471,4 +472,5 @@ footer {
         border: solid 1px rgb( var(--independence));
         border-radius: 0.5rem;
     }
+    */
 }
