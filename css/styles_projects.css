@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*
+author: sarah newman
+date: december 14, 2022
+
+---additional css for the projects page---
+
+most recent update: march 5, 2023
+*/
+
+/*//--------------mobile layout (tablet)--------------//*/
+@media only screen and /*(min-width: 401px) and */ (max-width: 872px) {
+    
+    /*****text container*****/
+    #wrapper {
+        padding-bottom: 20%;
+    }
+}
+
+
+/*//--------------desktop layout--------------//*/
+@media only screen and (min-width: 873px) {
+
+    /*****text container*****/
+    main {
+        display: block;
+    }
+    
+}
