@@ -6,7 +6,7 @@ date: december 14, 2022
 
 ---additional css for the projects page---
 
-most recent update: march 5, 2023
+most recent update: december 5, 2023
 */
 
 /*//--------------mobile layout (tablet)--------------//*/
@@ -24,7 +24,38 @@ most recent update: march 5, 2023
 
     /*****text container*****/
     main {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project-container {
+        flex: 0 0 calc(33.333% - 20px); /* Adjust the width as needed, subtracting margin */
+        margin-bottom: 20px;
+        border: 2px solid #3498db; /* Set the common border style */
+        border-radius: 10px; /* Add border-radius for rounded corners */
+        padding: 10px; /* Add padding for space inside the border */
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+    }
+
+    .project-container .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+    
+    .project-container .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px; /* Adjust the height as needed */
+    }
+    
+    .project-container img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 5px; /* Add border-radius for rounded image */
     }
     
 }

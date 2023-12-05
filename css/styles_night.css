@@ -6,7 +6,7 @@ date: december 14, 2022
 
 ---night mode stylesheet---
 
-most recent update: march 4, 2023
+most recent update: december 5, 2023
 */
 
 /*****colour variables*****/
@@ -137,11 +137,14 @@ ul {
 
 /*****text container*****/
 .outer-container {
+    flex: 1;
     overflow: hidden;
-    width: 100%;
+    width: 85%;
     border: 2px solid rgb(var(--pastelpink));
     border-radius: 0.5rem;
     padding: 0rem 0.5rem 0.5rem 0.5rem;
+    margin: 10px;
+    min-width: 115px;
 }
 
 .outer-container-text {
@@ -222,6 +225,51 @@ h2 {
     width: 100%;
 }
 
+
+/*****projects*****/
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    padding: 5px;
+}
+
+.inner-container-content {
+    cursor: pointer;
+}
+
+.popup {
+    width: 400px;
+    background-color: rgb( var(--babyblueeyes));
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    z-index: 1;
+}
+
+.popup button {
+    cursor: pointer;
+}
+
+.popup p {
+    color: rgb( var(--deeppurple));
+    word-wrap: normal;
+}
 
 
 /*****resume link*****/
@@ -367,6 +415,16 @@ footer {
         align-items: center;
     }
 
+    /*****project container*****/
+    #project-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+        margin-left: 25vw;
+        margin-right: 25vw;
+        align-items: center;
+    }
+
     /*****cartoon*****/
     #contact .cartoon_night {
         display: block;
@@ -383,6 +441,7 @@ footer {
 
     main {
         display: flex;
+        justify-content: center;
     }
 
     /*****text container*****/
@@ -391,7 +450,18 @@ footer {
         flex-direction: column;
         margin-top: 25vh;
         margin-left: 10vw;
-        margin-right: 5vw;
+        margin-right: 10vw;
+        align-items: center;
+    }
+
+    /*****project container*****/
+    #project-content {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        margin-top: 25vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
         align-items: center;
     }
 

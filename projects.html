@@ -11,7 +11,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&
         family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link id="theme" href="css/styles_day.css" rel="stylesheet"/>
-        <link href="css/styles_projects.css" rel="stylesheet"/>
         <script src="javascript/themes.js"></script>
     </head>
 
@@ -28,8 +27,7 @@
                         <li><a href="index.html">home</a></li>
                         <li><a href="about.html">about</a></li>
                         <li><a href="projects.html">projects</a></li>
-                        <!--<li><a href="skills.html">skills</a></li>
-                        <li><a href="contact.html">contact</a></li>-->
+                        <li><a href="resume" download="resume">resume</a></li>
                         <div id="daynight">
                             <button class="button" type="button" onclick="switchTheme()"><img src="images/icons/lightdark_dark.png" alt="" class="night_mode" aria-label="night" width="40" height="28"></button>
                             <button class="button" type="button" onclick="switchTheme()"><img  src="images/icons/lightdark_light.png" alt="" class="day_mode" aria-label="day" width="40" height="28"></button>
@@ -42,52 +40,82 @@
 
 
         <main>
-            <!--project 1-->
-            <div id="project_content">
+            <div id="project-content">
+                <!--project 1-->
                 <div class="outer-container">
                     <div class="row">
-                        <h2 class="outer-container-text">website</h2>
+                        <h2 class="outer-container-text">rogue planet</h2>
                     </div>
-                    <div class="card">
-                        <img id="website" href="https://github.com/sarahannealice/ePortfolio" src="./images/icons/c_pink.png" height="100" width="100">
+                    <div class="inner-container-content" onclick="openPopup('popup1')">
+                        <div class="inner-container"></div>
+                        <div class="card">
+                            <img id="rogue-planet" src="./images/icons/rogue.png" height="100" width="75">
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <!--project 2-->
-            <div id="project_content">
-                <div class="outer-container">
-                    <div class="row">
-                        <h2 class="outer-container-text">calculator</h2>
-                    </div>
-                    <div class="card">
-                        <img id="calculator" href="https://github.com/sarahannealice/AndroidCalculatorApp" src="./images/icons/java_pink.png" height="100" width="100">
+                    <!--https://www.youtube.com/watch?v=AF6vGYIyV8M&ab_channel=GreatStack-->
+                    <div class="popup" id="popup1">
+                        <button type="button" onclick="closePopup()">exit</button>
+                        <h2>rogue planet</h2>
+                        <p>language(s): c#</p>
+                        <p>software used: unity</p>
                     </div>
                 </div>
-            </div>
+
+                <!--project 2-->
+                <div class="outer-container">
+                    <div class="row">
+                        <h2 class="outer-container-text">ecosim</h2>
+                    </div>
+                    <div class="inner-container-content" onclick="openPopup('popup2')">
+                        <div class="inner-container"></div>
+                        <div class="card">
+                            <img id="ecosim" src="./images/icons/ecosim.png" height="100" width="100">
+                        </div>
+                    </div>
+
+                    <div class="popup" id="popup2">
+                        <h2>eco simulator</h2>
+                        <p>language(s): c</p>
+                        <p>software used: clion</p>
+                        <button type="button" onclick="closePopup()">exit</button>
+                    </div>
+                </div>
 
                 <!--project 3--> 
-            <div id="project_content">
                 <div class="outer-container">
                     <div class="row">
-                        <h2 class="outer-container-text">quiz builder</h2>
+                        <h2 class="outer-container-text">pizza app</h2>
                     </div>
-                    <div class="card">
-                        <img id="quiz_builder" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="delay(this.id, 'https://github.com/AlexsandriaRyan/UFO_Hangman')" src="./images/Icons/hangman-bw.jpg">
+                    <div class="inner-container-content" onclick="openPopup('popup3')">
+                        <div class="inner-container"></div>
+                        <div class="card">
+                            <img id="pizza-app" src="./images/icons/pizza_deliver.png" height="100" width="100">
+                        </div>
+                    </div>
+
+                    <div class="popup" id="popup3">
+                        <h2>cruddy pizza app</h2>
+                        <p>language(s): java, xaml</p>
+                        <p>software used: android studio (emulated on a pixel3)</p>
+                        <button type="button" onclick="closePopup()">exit</button>
                     </div>
                 </div>
-            </div>
 
-            <!--project 4-->   
-            <div id="project_content">
+                <!--project 4-->
+                <!--
                 <div class="outer-container">
                     <div class="row">
                         <h2 class="outer-container-text">asset modeling & texturing</h2>
                     </div>
-                    <div class="card">
-                        <img id="vga" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="delay(this.id, 'https://github.com/AlexsandriaRyan/UFO_Hangman')" src="./images/Icons/hangman-bw.jpg">
+                    <div class="inner-container-content">
+                        <div class="inner-container"></div>
+                        <div class="card">
+                            <img id="vga" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)" onmousedown="mouseDown(this.id)" onmouseup="mouseUp(this.id)" onclick="delay(this.id, 'https://github.com/AlexsandriaRyan/UFO_Hangman')" src="./images/Icons/hangman-bw.jpg">
+                        </div>
                     </div>
                 </div>
+                -->
             </div>
         </main>
 
@@ -107,6 +135,18 @@
         
         <!--<script type="text/javascript" scr="javascript/theme.js"></script>-->
         
+        <script>
+            function openPopup(id) {       
+                closePopup();
+                document.getElementById(id).classList.add("open-popup");
+            }
+
+            function closePopup() {
+                popup1.classList.remove("open-popup");
+                popup2.classList.remove("open-popup");
+                popup3.classList.remove("open-popup");
+            }
+        </script>
     </body>
 
 </html>
