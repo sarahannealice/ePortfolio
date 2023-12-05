@@ -126,7 +126,6 @@ ul {
     visibility: hidden;
 }
 
-/*button*/
 .button {
     background-color: transparent;
     border: none;
@@ -270,6 +269,7 @@ h2 {
     color: rgb( var(--deeppurple));
     word-wrap: normal;
 }
+
 
 
 /*****resume link*****/

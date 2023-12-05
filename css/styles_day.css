@@ -127,7 +127,6 @@ ul {
     visibility: hidden;
 }
 
-/*button*/
 .button {
     background-color: transparent;
     border: none;
@@ -137,33 +136,36 @@ ul {
 
 
 /*****text container*****/
-#wrapper .outer-container {
+.outer-container {
+    flex: 1;
     overflow: hidden;
-    width: 100%;
+    width: 85%;
     border: 2px solid rgb(var(--independence));
     border-radius: 0.5rem;
     padding: 0rem 0.5rem 0.5rem 0.5rem;
+    margin: 10px;
+    min-width: 115px;
 }
 
-#wrapper .outer-container-text {
+.outer-container-text {
     color: rgb(var(--independence));
     padding: 0.5vw;
     padding-left: 0.5vw;
 }
 
-#wrapper .inner-container {
+.inner-container {
     border: 1px solid rgb(var(--independence));
     border-radius: 0.5rem;
 }
 
-#wrapper .inner-container-content {
+.inner-container-content {
     border: 1px solid rgb(var(--independence));
     border-radius: 0.5rem;
     position: relative;
     flex-wrap: wrap;
 }
 
-#wrapper .inner-container {
+.inner-container {
     position: absolute;
     left: -50px;
     top: -50px;
@@ -175,7 +177,7 @@ ul {
     z-index: -1;
 }
 
-#wrapper .inner-container::after {
+.inner-container::after {
     content: "";
     display: block;
     height: 100%;
@@ -221,6 +223,52 @@ h2 {
     font-weight: 100;
     margin: auto;
     width: 100%;
+}
+
+
+/*****projects*****/
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    padding: 5px;
+}
+
+.inner-container-content {
+    cursor: pointer;
+}
+
+.popup {
+    width: 400px;
+    background-color: rgb( var(--deeppurple));
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    z-index: 1;
+}
+
+.popup button {
+    cursor: pointer;
+}
+
+.popup p {
+    color: rgb( var(--lightpink));
+    word-wrap: normal;
 }
 
 
@@ -393,6 +441,16 @@ footer {
         margin-right: 10vw;
         align-items: center;
     }
+
+    /*****project container*****/
+    #project-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+        margin-left: 25vw;
+        margin-right: 25vw;
+        align-items: center;
+    }
     
     /*****cartoon*****/
     #contact .cartoon_day {
@@ -410,7 +468,7 @@ footer {
 
     main {
         display: flex;
-        align-items: center;
+        justify-content: center;
     }
 
     /*****text container*****/
@@ -419,7 +477,18 @@ footer {
         flex-direction: column;
         margin-top: 25vh;
         margin-left: 10vw;
-        margin-right: 5vw;
+        margin-right: 10vw;
+        align-items: center;
+    }
+
+    /*****project container*****/
+    #project-content {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        margin-top: 25vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
         align-items: center;
     }
 
@@ -429,48 +498,4 @@ footer {
         margin-top: 23vh;
         margin-right: 10vw;
     }
-
-    /*****projects*****/
-    /*
-    #project_content {
-        justify-content: center;
-        margin-top: 20%;
-        width: 5%;
-        margin-left: 10vw;
-        margin-right: 10vw;
-
-        overflow: hidden;
-        width: 100%;
-        border: 2px solid rgb(var(--independence));
-        border-radius: 0.5rem;
-        padding: 0rem 0.5rem 0.5rem 0.5rem;
-    }
-
-    #project_content + #project_content {
-        margin-left: 10px;
-    }
-    
-    #project_content .outer_container {
-        overflow: hidden;
-        width: 100%;
-        border: 2px solid rgb(var(--independence));
-        border-radius: 0.5rem;
-        padding: 0rem 0.5rem 0.5rem 0.5rem;
-    }
-
-    #project_content .outer-container-text {
-    color: rgb(var(--independence));
-    padding: 0.5vw;
-    padding-left: 0.5vw;
-    }
-
-    .card {
-        margin: auto;
-        width: 100%;
-        height: auto;
-        align-items: center;
-        border: solid 1px rgb( var(--independence));
-        border-radius: 0.5rem;
-    }
-    */
 }
