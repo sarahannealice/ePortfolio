@@ -143,7 +143,7 @@ ul {
     border: 2px solid rgb(var(--independence));
     border-radius: 0.5rem;
     padding: 0rem 0.5rem 0.5rem 0.5rem;
-    margin: 10px;
+    margin: 20px;
     min-width: 115px;
 }
 
@@ -250,7 +250,7 @@ h2 {
     left: 50%;
     transform: translate(-50%,-50%) scale(0.1);
     text-align: center;
-    padding: 0 30px 30px;
+    padding: 10px 30px 30px;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
 }
@@ -263,11 +263,19 @@ h2 {
 }
 
 .popup button {
+    position: absolute;
+    color: rgb( var(--deeppurple));
+    border-color: rgb( var(--lightpink));
+    border-radius: 50px;
+    top: 10px;
+    right: 10px;
+    padding: 0 5px 0 5px;
     cursor: pointer;
 }
 
 .popup p {
     color: rgb( var(--lightpink));
+    padding: 5px;
     word-wrap: normal;
 }
 
@@ -486,6 +494,8 @@ footer {
         display: flex;
         width: 50%;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
         margin-top: 25vh;
         margin-left: 10vw;
         margin-right: 10vw;
