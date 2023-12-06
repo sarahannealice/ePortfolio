@@ -241,7 +241,9 @@ h2 {
 }
 
 .popup {
-    width: 400px;
+    width: 70vw;
+    max-height: 70vh;
+    overflow-y: auto;
     background-color: rgb( var(--babyblueeyes));
     border-radius: 6px;
     position: absolute;
@@ -249,7 +251,7 @@ h2 {
     left: 50%;
     transform: translate(-50%,-50%) scale(0.1);
     text-align: center;
-    padding: 0 30px 30px;
+    padding: 10px 30px 30px;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
 }
@@ -285,6 +287,39 @@ h2 {
 .popup p.descriptions {
     color: rgb(var(--cornflowerblue));
     margin: 10px;
+}
+
+.popup .pizza-imgs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup img.project-img {
+    padding-top: 10px;
+}
+
+/*scrollbar style*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(var(--cornflowerblue));
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--deeppurple));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(var(--pastelpink));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: rgb(var(--pastelpink));
 }
 
 
