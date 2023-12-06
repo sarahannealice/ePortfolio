@@ -5,4 +5,6 @@
 - 💞️ I’m looking to collaborate on a meaningful project that will help people in their day-to-day lives.
 - 📫 How to reach me: sarah.annealice@gmail.com
 
-**please note this is a profile of school works over the years and is undergoing changes constantly**
+** please note this is a profile of school works over the years and is undergoing changes constantly **
+
+** box style inspired by that of alexsandria ryan's **

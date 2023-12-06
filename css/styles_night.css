@@ -126,57 +126,53 @@ ul {
 
 
 /*****text container*****/
-.outer-container {
+.frame {
     flex: 1;
     overflow: hidden;
     width: 85%;
     border: 2px solid rgb(var(--pastelpink));
-    border-radius: 0.5rem;
-    padding: 0rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 25px;
+    padding: 0 12px 12px 12px;
     margin: 20px;
     min-width: 115px;
 }
 
-.outer-container-text {
+.frame-title {
     color: rgb(var(--babyblueeyes));
-    padding: 0.5vw;
+    padding: 0.8vw;
     padding-left: 0.5vw;
 }
 
-.inner-container {
+.frame-inner {
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    width: 100%;
+    height: 100%;
     border: 1px solid rgb(var(--pastelpink));
     border-radius: 0.5rem;
+    border-width: 50px;
+    border-image: linear-gradient(rgba(var(--deeppurple), 1) 0%, rgba(var(--pastelpink), 1) 100%) 1;
+    z-index: -1;
 }
 
-.inner-container-content {
+.frame-content {
     border: 1px solid rgb(var(--pastelpink));
-    border-radius: 0.5rem;
+    border-radius: 6px;
     position: relative;
     flex-wrap: wrap;
 }
 
-.inner-container {
-    position: absolute;
-    left: -50px;
-    top: -50px;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    border-width: 50px;
-    border-image: linear-gradient(rgba(var(--deeppurple), 1) 0%, rgba(var(--pastelpink), .8) 100%) 1;
-    z-index: -1;
-}
-
-.inner-container::after {
+.frame-inner::after {
     content: "";
     display: block;
     height: 100%;
     background-position: center;
-    background-image: linear-gradient(to bottom, rgba(var(--cornflowerblue), 0), rgba(var(--independence), 0.25));
-    backdrop-filter: blur(5px);
-    filter: saturate(110%) contrast(150%) brightness(70%);
-    -webkit-backdrop-filter: blur(3px);
-    -webkit-filter: saturate(110%) contrast(150%) brightness(90%);
+    transform: scale(1);
+    transform-origin: 10%;
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+    z-index: -1;
 }
 
 p {
@@ -195,13 +191,13 @@ h1 {
     text-shadow: 0px 2px 10px rgba(var(--candypink),0.7);
 }
 
-.column {
+.frame-txt {
     padding-left: .5rem;
     padding-right: .5rem;
     padding-bottom: .5rem;
 }
 
-.column bug_txt {
+.frame-txt bug_txt {
     font-weight: 400;
     font-size: 2.6rem;
     line-height: 2.6rem;
@@ -227,7 +223,7 @@ h2 {
     padding: 5px;
 }
 
-.inner-container-content {
+.frame-content img {
     cursor: pointer;
 }
 
@@ -235,7 +231,7 @@ h2 {
     width: 70vw;
     max-height: 70vh;
     overflow-y: auto;
-    background-color: rgb( var(--babyblueeyes));
+    background-color: rgba( var(--babyblueeyes), 95%);
     border-radius: 6px;
     position: absolute;
     top: 0;
@@ -276,7 +272,7 @@ h2 {
 }
 
 .popup p.descriptions {
-    color: rgb(var(--cornflowerblue));
+    color: royalblue;
     margin: 10px;
 }
 
@@ -451,7 +447,7 @@ footer {
 
 
     /*****text container*****/
-    #wrapper {
+    .box {
         display: flex;
         flex-direction: column;
         margin-top: 10vh;
@@ -519,7 +515,7 @@ footer {
         justify-content: center;
     }
 
-    #wrapper {
+    .box {
         display: flex;
         flex-direction: column;
         margin-top: 25vh;
