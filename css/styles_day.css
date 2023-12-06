@@ -290,7 +290,7 @@ h2 {
     margin: 10px;
 }
 
-.popup img.project-img {
+.popup img.project-img, img {
     padding-top: 10px;
 }
 
@@ -503,9 +503,14 @@ footer {
         max-width: auto;
     }
 
-    .popup .ecosim-imgs {
-        height: 225px;
-        width: 225px;
+    .popup .rogue-img {
+        height: 125px;
+        width: 250px;
+    }
+
+    .popup .ecosim-img {
+        height: 250px;
+        width: 250px;
     }
 
     .popup .music-img {
