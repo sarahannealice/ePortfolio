@@ -290,11 +290,6 @@ h2 {
     margin: 10px;
 }
 
-.popup .pizza-imgs {
-    display: flex;
-    justify-content: space-around;
-}
-
 .popup img.project-img {
     padding-top: 10px;
 }
@@ -503,6 +498,20 @@ footer {
         margin-right: 25vw;
         align-items: center;
     }
+
+    .popup {
+        max-width: auto;
+    }
+
+    .popup .ecosim-imgs {
+        height: 225px;
+        width: 225px;
+    }
+
+    .popup .music-img {
+        height: 200px;
+        width: 250px;
+    }
     
     /*****cartoon*****/
     #contact .cartoon_day {
@@ -544,6 +553,11 @@ footer {
         margin-left: 10vw;
         margin-right: 10vw;
         align-items: center;
+    }
+
+    .popup .pizza-imgs {
+        display: flex;
+        justify-content: space-around;
     }
 
     /*****cartoon*****/
