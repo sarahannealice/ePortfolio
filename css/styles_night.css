@@ -6,7 +6,7 @@ date: december 14, 2022
 
 ---night mode stylesheet---
 
-most recent update: december 5, 2023
+most recent update: december 6, 2023
 */
 
 /*****colour variables*****/
@@ -39,6 +39,7 @@ html, body {
     overflow-x: hidden;
 }
 
+/*linear gradient -- https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient*/
 body {
     margin: auto;
     display: flex;
@@ -125,7 +126,7 @@ ul {
 
 
 
-/*****text container*****/
+/*****text container -- inspired by that of alexsandria ryan's*****/
 .frame {
     flex: 1;
     overflow: hidden;
@@ -143,6 +144,7 @@ ul {
     padding-left: 0.5vw;
 }
 
+/*colour of frame*/
 .frame-inner {
     position: absolute;
     left: -50px;
@@ -163,6 +165,7 @@ ul {
     flex-wrap: wrap;
 }
 
+/*blur effect -- https://stackoverflow.com/a/29521377*/
 .frame-inner::after {
     content: "";
     display: block;
@@ -401,31 +404,6 @@ footer {
 /*
 @media only screen and (max-width: 400) {
     
-    body {
-        background: linear-gradient(to bottom, rgba(var(--lightpink),0) 10%, rgba(var(--lightpink),1) 90%), url("../images/background_day_mobile.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    main {
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 15vh;
-    }
-
-    #wrapper {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10vh;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        align-items: center;
-    }
-    
-    #contact .cartoon{
-        visibility: hidden;
-    }
 }
 */
 
