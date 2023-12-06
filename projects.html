@@ -18,21 +18,17 @@
     <body>
 
         <header>
-            <img src="images/icons/logo.png" class="logo" alt="logo" width="80" height="51">
-                
-            <div id="topnav">
-                <nav>
-                    <ul>
-                    <div class="menu">
+            <div id="menu">
+                <nav id="topnav">
+                    <ul class="menu">
                         <li><a href="index.html">home</a></li>
                         <li><a href="about.html">about</a></li>
                         <li><a href="projects.html">projects</a></li>
-                        <li><a  href="./files/SarahNewman_Nov2023.pdf" download>resume</a></li>
+                        <li><a href="./files/SarahNewman_Nov2023.pdf" download="./files/SarahNewman_Nov2023.pdf">resume</a></li>
                         <div id="daynight">
                             <button class="button" type="button" onclick="switchTheme()"><img src="images/icons/lightdark_dark.png" alt="" class="night_mode" aria-label="night" width="40" height="28"></button>
                             <button class="button" type="button" onclick="switchTheme()"><img  src="images/icons/lightdark_light.png" alt="" class="day_mode" aria-label="day" width="40" height="28"></button>
                         </div>
-                    </div>
                     </ul>
                 </nav>
             </div>
@@ -129,7 +125,7 @@
                         <p class="descriptions">
                             <b>description:</b> a pizza application with two language options, one pizza per order, and three toppings 
                             per pizza is what was delivered. the user would be able to access all previous entered orders wih the 
-                            capabilities to both edit and delete them.
+                            capabilities to both edit and delete them (CRUD).
                             <br><br>
                             <b>process:</b> designing the application and choosing a theme took some time, but writing the event handlers 
                             to properly pass and receive the correct data was tricky. not only was it for the basic forward/backward navigation 
@@ -190,6 +186,12 @@
                     <p>software used: visual studio, .net, entity framework</p>
                 </div>
             </div>
+
+            <!--space for mobile-->
+            <br>
+            <br>
+            <br>
+            <br>
         </main>
 
 
@@ -206,21 +208,7 @@
             </div>
         </footer>
         
-        <!--<script type="text/javascript" scr="javascript/theme.js"></script>-->
-        
-        <script>
-            function openPopup(id) {       
-                closePopup();
-                document.getElementById(id).classList.add("open-popup");
-            }
-
-            function closePopup() {
-                popup1.classList.remove("open-popup");
-                popup2.classList.remove("open-popup");
-                popup3.classList.remove("open-popup");
-                popup4.classList.remove("open-popup");
-            }
-        </script>
+        <script src="./javascript/functions.js"></script>
     </body>
 
 </html>
