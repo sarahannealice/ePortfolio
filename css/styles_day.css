@@ -242,7 +242,7 @@ h2 {
 }
 
 .popup {
-    width: 400px;
+    width: 70vw;
     background-color: rgb( var(--deeppurple));
     border-radius: 6px;
     position: absolute;
@@ -273,10 +273,23 @@ h2 {
     cursor: pointer;
 }
 
+.popup h2 {
+    font-size: 1.25rem;
+}
+
 .popup p {
     color: rgb( var(--lightpink));
     padding: 5px;
     word-wrap: normal;
+}
+
+.popup p.descriptions {
+    color: rgb(var(--babyblueeyes));
+    margin: 10px;
+}
+
+.popup img.project-img {
+    padding-top: 10px;
 }
 
 

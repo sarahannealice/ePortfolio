@@ -272,10 +272,19 @@ h2 {
     cursor: pointer;
 }
 
+.popup h2 {
+    font-size: 1.25rem;
+}
+
 .popup p {
     color: rgb( var(--deeppurple));
     padding: 5px;
     word-wrap: normal;
+}
+
+.popup p.descriptions {
+    color: rgb(var(--cornflowerblue));
+    margin: 10px;
 }
 
 
