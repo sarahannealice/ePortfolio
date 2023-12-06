@@ -55,6 +55,7 @@ body {
 
 header {
     position: fixed;
+    height: 50px;
     top: 0;
     left: 5vw;
     right: 5vw;
