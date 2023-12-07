@@ -23,6 +23,17 @@ most recent update: december 6, 2023
     --peach: 255,228,217;/*#ffe4d9*/
     --lipstick: 144,31,37;/*#901F25*/
     --wine: 64,0,3;/*#400003*/
+
+    /*test colours*/
+    --paleleft: 226, 223, 218;/*#.....*/
+    --paleright: 220, 217, 212;/*#.....*/
+    --blushcoral: 254, 116, 116;/*#.....*/
+    --softcoral: 250, 174, 178;
+    --prettypink: 234, 119, 148;/*#.....*/
+    --softpink: 235, 183, 196;
+    --deeporange: 255, 141, 117;
+    --cuteorange: 255, 155, 135;
+    --softorange: 255, 180, 154;/*#.....*/
 }
 
 
@@ -31,7 +42,8 @@ most recent update: december 6, 2023
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Corbel', sans-serif;
+    background-color: var(--paleleft);
 }
 
 html, body {
@@ -40,15 +52,16 @@ html, body {
     overflow-x: hidden;
 }
 
-/*linear gradient -- https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient*/
+/*gradient tool -- https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient*/
+/*background img from freepik -- to be sited*/
 body {
     margin: auto;
     display: flex;
     flex-direction: column;
     word-break: normal;
-    color: white;
-    background: rgb(var(--lightpink));
-    background: linear-gradient(to bottom, rgba(var(--lightpink),0) 10%, rgba(var(--lightpink),1) 95%), url("../images/background_day.jpg");
+    color: var(--paleleft);
+    background: rgb(var(--prettypink));
+    background: linear-gradient(to bottom, rgba(var(--lightpink),0) 30%, rgba(var(--lightpink),1) 95%), url("../images/sources/pink_orange.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,19 +71,21 @@ header {
     position: fixed;
     height: 50px;
     top: 0;
-    left: 5vw;
-    right: 5vw;
+    left: 0;
+    right: 0;
     display: flex;
     margin: auto;
     margin-bottom: auto;
     padding-top: 0.5%;
-    background-color: rgb(var(--peach));
+    background: linear-gradient(to right, rgba(var(--paleleft),1) 35%, rgba(var(--paleright),1) 95%);
     z-index: 2;
 }
 
 p {
-    font-weight: 300;
-    line-height: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: rgb(var(--independence));
 }
 
 
@@ -89,7 +104,7 @@ ul {
 
 #topnav li a {
     color: rgb(var(--independence));
-    font-size: 16px;
+    font-size: 1.25rem;
     font-weight: 500;
     text-align: center;
     padding: 5px;
@@ -97,7 +112,7 @@ ul {
 }
 
 #topnav li a:hover {
-    color: rgb(var(--cornflowerblue));
+    color: rgb(var(--prettypink));
     font-weight: 550;
 }
 
@@ -132,17 +147,28 @@ ul {
     flex: 1;
     overflow: hidden;
     width: 85%;
-    border: 2px solid rgb(var(--independence));
+    border: 2px solid rgb(var(--cuteorange));
     border-radius: 25px;
     padding: 0 12px 12px 12px;
     margin: 20px;
     min-width: 115px;
+    box-shadow: 5px 10px rgb(var(--blushcoral));
 }
 
+/*frame title*/
 .frame-title {
     color: rgb(var(--independence));
+    font-weight: bold;
     padding: 0.8vw;
     padding-left: 0.5vw;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: auto;
+    width: 100%;
 }
 
 /*colour of frame*/
@@ -152,15 +178,15 @@ ul {
     top: -50px;
     width: 100%;
     height: 100%;
-    border: 1px solid rgb(var(--independence));
+    border: 1px solid rgb(var(--cuteorange));
     border-radius: 10px;
     border-width: 50px;
-    border-image: linear-gradient(rgba(var(--pastelpink), 1) 0%, rgba(var(--independence), 1) 100%) 1;
+    border-image: linear-gradient(rgba(var(--softcoral), 1) 15%, rgba(var(--cuteorange), 1) 100%) 1;
     z-index: -1;
 }
 
 .frame-content {
-    border: 1px solid rgb(var(--independence));
+    border: 1px solid rgb(var(--cuteorange));
     border-radius: 6px;
     position: relative;
     flex-wrap: wrap;
@@ -172,28 +198,22 @@ ul {
     display: block;
     height: 100%;
     background-position: center;
-    background-image: linear-gradient(to bottom, rgba(var(--pastelpink), 0), rgba(var(--candypink), 0.15));
+    /*background-image: linear-gradient(to bottom, rgba(var(--softpink), 0), rgba(var(--softcoral), 0.15));*/
     transform: scale(1);
     transform-origin: 10%;
-    filter: blur(5px);
+    filter: blur(8px);
     backdrop-filter: blur(2px);
     z-index: -1;
 }
 
-p {
-    color: rgb( var(--independence));
-    font-weight: 400;
-    line-height: 1rem;
-}
-
 h1 {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: rgb(var(--independence));
     line-height: 90%;
     margin-top: 20px;
     padding-bottom: 15px;
-    text-shadow: 0px 2px 10px rgba(var(--candypink),0.7);
+    text-shadow: 0px 2px 10px rgba(var(--blushcoral),0.7);
 }
 
 .frame-txt {
@@ -206,14 +226,6 @@ h1 {
     font-weight: 400;
     font-size: 2.6rem;
     line-height: 2.6rem;
-}
-
-h2 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-    font-weight: 100;
-    margin: auto;
-    width: 100%;
 }
 
 
@@ -237,7 +249,7 @@ h2 {
     max-height: 70vh;
     overflow-y: auto;
     background-color: rgba( var(--deeppurple), 95%);
-    border-radius: 6px;
+    border-radius: 25px;
     position: absolute;
     top: 0;
     left: 50%;
@@ -257,8 +269,8 @@ h2 {
 
 .popup button {
     position: absolute;
-    color: rgb( var(--deeppurple));
-    border-color: rgb( var(--lightpink));
+    color: rgb( var(--softpink));
+    border-color: rgb( var(--softpink));
     border-radius: 50px;
     top: 10px;
     right: 10px;
@@ -268,16 +280,17 @@ h2 {
 
 .popup h2 {
     font-size: 1.25rem;
+    color: rgb(var(--blushcoral));
 }
 
 .popup p {
-    color: rgb( var(--lightpink));
+    color: rgb( var(--softpink));
     padding: 5px;
     word-wrap: normal;
 }
 
 .popup p.descriptions {
-    color: rgb(var(--babyblueeyes));
+    color: rgb(var(--softorange));
     margin: 10px;
 }
 
@@ -292,21 +305,22 @@ h2 {
 
 ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:active {
-    background-color: rgb(var(--independence));
+    background-color: rgb(var(--softcoral));
+    height: 65vh;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(var(--pastelpink));
-    border-radius: 10px;
+    background-color: rgb(var(--softorange));
+    border-radius: 25px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(var(--lightpink));
+    background-color: rgba(var(--softpink), 85%);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track:hover {
-    background-color: rgb(var(--lightpink));
+    background-color: rgba(var(--softpink), 85%);
 }
 
 
