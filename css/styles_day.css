@@ -247,7 +247,7 @@ h1 {
 
 .popup {
     width: 70vw;
-    max-height: 70vh;
+    max-height: 65vh;
     overflow-y: auto;
     background-color: rgba( var(--deeppurple), 95%);
     border-radius: 25px;
@@ -487,7 +487,6 @@ footer {
 
     .popup {
         max-width: auto;
-        max-height: 70%;
     }
 
     .popup .rogue-img {
