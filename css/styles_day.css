@@ -63,7 +63,7 @@ body {
     background: rgb(var(--prettypink));
     background: linear-gradient(to bottom, rgba(var(--lightpink),0) 30%, rgba(var(--lightpink),1) 95%), url("../images/sources/pink_orange.jpg");
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
