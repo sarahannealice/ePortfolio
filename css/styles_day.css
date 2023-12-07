@@ -204,6 +204,7 @@ h2 {
     filter: blur(8px);
     backdrop-filter: blur(2px);
     z-index: -1;
+    will-change: transform;
 }
 
 h1 {
@@ -486,6 +487,7 @@ footer {
 
     .popup {
         max-width: auto;
+        max-height: 90%;
     }
 
     .popup .rogue-img {
