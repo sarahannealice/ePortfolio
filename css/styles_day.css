@@ -63,8 +63,12 @@ body {
     background: rgb(var(--prettypink));
     background: linear-gradient(to bottom, rgba(var(--lightpink),0) 30%, rgba(var(--lightpink),1) 95%), url("../images/sources/pink_orange.jpg");
     background-position: center;
-    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* -o-background-size: cover;
+    -moz-background-size: cover; */
+    -webkit-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -193,6 +197,7 @@ h2 {
 }
 
 /*blur effect -- https://stackoverflow.com/a/29521377*/
+/*https://www.reddit.com/r/css/comments/12jhh10/solution_backdrop_filter_blur_doesnt_work_in/?utm_source=share&utm_medium=web2x&context=3*/
 .frame-inner::after {
     content: "";
     display: block;
