@@ -448,16 +448,71 @@ footer {
 
 
 /*//--------------mobile layout (cell)--------------//*/
-/*
 @media only screen and (max-width: 400) {
+
+    /*****header*****/
+    header {
+        padding-top: 2%;
+    }
+
+    /*****navbar*****/    
+    #topnav li {
+        display: inline;
+    }
+
+    /*****text container*****/
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        align-items: center;
+    }
+
+    /*****project container*****/
+    #project-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+        margin-left: 25vw;
+        margin-right: 25vw;
+        align-items: center;
+    }
+
+    .popup {
+        max-width: auto;
+    }
+
+    .popup .rogue-img {
+        height: 125px;
+        width: 250px;
+    }
+
+    .popup .ecosim-img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .popup .music-img {
+        height: 200px;
+        width: 250px;
+    }
+    
+    /*****cartoon*****/
+    #contact .cartoon_day {
+        display: block;
+        margin: 0 auto;
+        padding-top: 1%;
+        padding-bottom: 20%;
+    }
     
 }
-*/
 
 
 
 /*//--------------mobile layout (tablet)--------------//*/
-@media only screen and /*(min-width: 401px) and */ (max-width: 872px) {
+@media only screen and (min-width: 401px) and (max-width: 872px) {
 
     /*****header*****/
     header {
@@ -518,9 +573,7 @@ footer {
 }
 
 
-
-/*//--------------desktop layout--------------//*/
-@media only screen and (min-width: 873px) {
+@media only screen and (min-width: 873px) and (max-width: 1104px) {
 
     /*****navbar*****/
     #menu {
@@ -541,7 +594,63 @@ footer {
     .box {
         display: flex;
         flex-direction: column;
+        margin-top: 15vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        align-items: center;
+    }
+
+    /*****project container*****/
+    #project-content {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
         margin-top: 25vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        align-items: center;
+    }
+
+    .popup .pizza-imgs {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*****cartoon*****/
+    #contact {
+        display: flex;
+        margin-top: 23vh;
+        margin-right: 10vw;
+    }
+}
+
+
+
+/*//--------------desktop layout--------------//*/
+@media only screen and (min-width: 1105px) {
+
+    /*****navbar*****/
+    #menu {
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    #topnav li {
+        display: inline;
+    }
+
+    /*****text container*****/
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
         margin-left: 10vw;
         margin-right: 10vw;
         align-items: center;
