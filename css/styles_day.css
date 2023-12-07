@@ -61,7 +61,7 @@ body {
     word-break: normal;
     color: var(--paleleft);
     background: rgb(var(--prettypink));
-    background: linear-gradient(to bottom, rgba(var(--lightpink),0) 30%, rgba(var(--lightpink),1) 95%), url("../images/sources/pink_orange.gif");
+    background: linear-gradient(to bottom, rgba(var(--lightpink),0) 30%, rgba(var(--lightpink),1) 95%), url("../images/sources/pink_orange.jpg");
     background-position: center;
     background-size: cover;
     -o-background-size: cover;
