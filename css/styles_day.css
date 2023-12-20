@@ -303,6 +303,26 @@ h1 {
     padding-top: 10px;
 }
 
+/*****team portfolio links*****/
+.teammates:link {
+    color: rgb(var(--blushcoral));
+    text-decoration: none;
+}
+
+.teammates:visited {
+    color: rgb(var(--blushcoral));
+    text-decoration: none;
+}
+
+.teammates:hover {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.teammates {
+    color: rgb(var(--blushcoral));
+}
+
 /*scrollbar style*/
 ::-webkit-scrollbar {
     width: 12px;
@@ -551,6 +571,8 @@ footer {
     .popup .rogue-img {
         height: 125px;
         width: 250px;
+        /* height: 200px;
+        width: 375px; */
     }
 
     .popup .ecosim-img {
@@ -573,6 +595,7 @@ footer {
 }
 
 
+/*//--------------average desktop layout--------------//*/
 @media only screen and (min-width: 873px) and (max-width: 1104px) {
 
     /*****navbar*****/
@@ -628,7 +651,7 @@ footer {
 
 
 
-/*//--------------desktop layout--------------//*/
+/*//--------------larger desktop layout--------------//*/
 @media only screen and (min-width: 1105px) {
 
     /*****navbar*****/

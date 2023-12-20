@@ -2,7 +2,12 @@
 author: sarah newman
 date: march 2, 2023
 
-most recent update: march 3, 2023
+most recent update: december 20, 2023
+*/
+
+/*
+* this file is used to alternated between light and dark mode
+* it was used for a previous version and not currently being used
 */
 
 

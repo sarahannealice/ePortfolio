@@ -1,3 +1,10 @@
+/*
+author: sarah newman
+date: march 2, 2023
+
+most recent update: december 20, 2023
+*/
+
 // used to open-close project description popups
 function openPopup(id) {       
     closePopup();
